@@ -27,12 +27,12 @@ label dharem:
                             p "Можешь рассказать мне что-нибудь о себе?"
                             mik "Эмм... И что ты хочешь знать?"
                             $ extra1 = 1
-                            p "Maybe something about that weird eye you have before."
+                            p "Может быть, что-то про этот странный глаз, который у тебя был раньше."
                             $ renpy.transition(dissolve)
                             hide mikoop
                             show mikoshar2
-                            mik "You mean this?"
-                            p "Yews... You are from the Uchiha clan right?"
+                            mik "Ты имеешь в виду это?"
+                            p "Тис ... Вы из клана Учиха не так ли?"
                             mik "Probably... I am not sure... I didn't remember anything from my past."
                             mik "Or maybe I should say I do not have any past."
                             p "And what that mean?"

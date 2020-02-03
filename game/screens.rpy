@@ -12,8 +12,8 @@ init python:
             ui.text("Genjutsu: %d" % genjutsu)
             ui.text("Ninjutsu: %d" % ninjutsu)
             ui.text("Namigan: %d" % eyes)
-            ui.text("Chakra: %d" % chakra)
-            ui.text("Day: %d" % day)
+            ui.text("Чакра: %d" % chakra)
+            ui.text("День: %d" % day)
             ui.textbutton("Hide Stats", clicked=curried_toggle(False))
             ui.close()
         else:
@@ -22,16 +22,16 @@ init python:
     renpy.define_screen("stat_box", stat_box)
 
     def toggle_stats(x):
-        global show_stats 
+        global show_stats
         show_stats = x
         renpy.restart_interaction()
 
 
 
 
-    
 
-# ENEMY TRAINING FIGHT    
+
+# ENEMY TRAINING FIGHT
 screen shinobi_stats_screen:
     frame:
         xalign 0.01 yalign 0.05
@@ -47,12 +47,12 @@ screen shinobi_stats_screen:
                     right_gutter 0
                     thumb None
                     thumb_shadow None
-                    
+
                 null width 5
-                
+
                 text "[player_hp] / [player_max_hp]" size 16
-                
-                
+
+
     frame:
         xalign 0.99 yalign 0.05
         vbox:
@@ -67,9 +67,9 @@ screen shinobi_stats_screen:
                     right_gutter 0
                     thumb None
                     thumb_shadow None
-                    
+
                 null width 5
-                
+
                 text "[shinobi_hp] / [shinobi_max_hp]" size 16
 
 
@@ -80,7 +80,7 @@ screen shinobi_stats_screen:
  #   style nvl_dialogue:
   #      line_spacing 10
   #  style say_dialogue:
-   #     line_spacing 10  
+   #     line_spacing 10
    # style say_thought:
 #        line_spacing 10
    # style say_dialogue:
@@ -1534,7 +1534,3 @@ style slider_pref_vbox:
 style slider_pref_slider:
     variant "small"
     xsize 900
-
-
-
-

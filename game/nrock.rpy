@@ -2,7 +2,7 @@
 
 label nrock:
 
-    scene nrock0  
+    scene nrock0
 
     $ select = renpy.imagemap("nrock0.jpg", "nrock1.jpg", [
                                                (816, 72, 1094, 171, "gate"),
@@ -10,82 +10,82 @@ label nrock:
                                                (1432, 432, 1887, 561, "lab"),
                                                (710, 376, 1087, 471, "ntown"),
                                                (904, 670, 1238, 798, "village"),
-                                               ]) 
+                                               ])
     if select == "gate":
         menu:
             "Return to Konoha":
                 "You leave the Iwagakure."
-                scene black with circleirisin   
+                scene black with circleirisin
                 "After a day of traveling you come to the Konoha."
                 $ day = day + 1
                 show droom with circleirisout
                 jump nday
-                
+
             "Assign":
                 "There is nothing to do right now."
                 jump nrock
-                
+
             "Sleep":
-                "You need to get some rest."
+                "Тебе нужно немного отдохнуть."
                 $ day = day + 1
-                scene black with circleirisin               
+                scene black with circleirisin
                 show drock0 with circleirisout
                 jump drock
-                
+
             "Kunoichi":
                 scene black with circleirisin
-                show is1a with circleirisout 
+                show is1a with circleirisout
                 jump is111
-                
+
             "Go to map":
-                scene black with circleirisin               
+                scene black with circleirisin
                 show nrock0 with circleirisout
-                jump nrock  
-        
+                jump nrock
+
     if select == "park":
-        scene black with circleirisin 
+        scene black with circleirisin
         show rpark with circleirisout
         jump nrpark
-        
+
     if select == "lab":
         if kushinamission == 0:
-            scene black with circleirisin               
+            scene black with circleirisin
             show rlab with circleirisout
             jump nrocklab
         else:
             menu:
-                "Go to the hospital":
-                    scene black with circleirisin               
+                "Пойти в больницу":
+                    scene black with circleirisin
                     show rlab with circleirisout
                     jump nrocklab
-                    
-                "Visit Kushina":
-                    scene black with circleirisin               
+
+                "Пойти к Кушине":
+                    scene black with circleirisin
                     show rbad with circleirisout
                     jump nrockclone
-                    
-            
-        
+
+
+
     if select == "ntown":
-        scene black with circleirisin 
-        show rnight with circleirisout        
+        scene black with circleirisin
+        show rnight with circleirisout
         jump nrocktown
-        
+
     if select == "village":
         if tenmission == 0:
             "..."
         if kagumission >= 2:
-            scene black with circleirisin 
+            scene black with circleirisin
             show nstone with circleirisout
             jump nrvillage
-            
+
         if temamission == 0:
             "This is a village - there are many houses, but you didn't know anyone."
-            scene black with circleirisin 
+            scene black with circleirisin
             show nrock0 with circleirisout
             jump nrock
         else:
-            scene black with circleirisin 
+            scene black with circleirisin
             show nstone with circleirisout
             jump nrvillage
 
@@ -182,12 +182,12 @@ label nrpark:
                 ti "I need to think about it... Come here another day."
                 p "OK.... see you later..."
                 $ day = day + 1
-                scene black with circleirisin               
+                scene black with circleirisin
                 show drock0 with circleirisout
                 jump drock
             elif temamission >= 12:
                 "Temari is now in the hidden tree village."
-                scene black with circleirisin               
+                scene black with circleirisin
                 show nrock0 with circleirisout
                 jump nrock
             elif temamission == 1:
@@ -236,17 +236,17 @@ label nrpark:
                         p "Yes... I think I can beat your ass right now."
                         ti "Okay, if you really think so."
                         jump temabattle1
-                        
+
                     "No":
                         p "This day was really hard for me... We should do it tomorrow."
-                        ti "OK... I will be here."               
-                
+                        ti "OK... I will be here."
+
                 $ day = day + 1
-                scene black with circleirisin               
+                scene black with circleirisin
                 show drock0 with circleirisout
                 jump drock
-                
-            elif temamission == 2:   
+
+            elif temamission == 2:
                 "You walk around the park..."
                 "And find Temari..."
                 $ renpy.transition(dissolve)
@@ -263,14 +263,14 @@ label nrpark:
                         p "I am ready."
                         ti "Me too..."
                         jump temabattle1
-                        
+
                     "No":
                         p "Maybe later..."
                         ti "Sure..."
-                        scene black with circleirisin               
+                        scene black with circleirisin
                         show nrock0 with circleirisout
                         jump nrock
-                
+
             else:
                 "You walk around the park..."
                 "And find Temari..."
@@ -290,21 +290,21 @@ label nrpark:
                         p "Ok I am ready."
                         ti "Me too..."
                         jump temabattle1
-                        
+
                     "Get out":
                         p "I am not in a mood right now. Maybe later..."
                         ti "..."
-                        scene black with circleirisin               
+                        scene black with circleirisin
                         show nrock0 with circleirisout
                         jump nrock
-                        
-                scene black with circleirisin               
+
+                scene black with circleirisin
                 show nrock0 with circleirisout
                 jump nrock
-                                
-                                
-                        
-            
+
+
+
+
         "Relax":
             "You decide to relax a little in the park."
             "After some time you feel a weird feeling."
@@ -312,13 +312,13 @@ label nrpark:
             $ chakra = chakra + 1
             "It was so refreshing."
             $ day = day + 1
-            scene black with circleirisin               
+            scene black with circleirisin
             show drock0 with circleirisout
             jump drock
         "Go to map":
-            scene black with circleirisin               
+            scene black with circleirisin
             show nrock0 with circleirisout
-            jump nrock       
+            jump nrock
 
 
 # TEMARI BATTLE
@@ -339,7 +339,7 @@ label temabattle1:
     $ shinobi_max_hp = 200
     $ shinobi_hp = shinobi_max_hp
     show screen shinobi_stats_screen
-    
+
     while (shinobi_hp > 0) and (player_hp > 0):
         hide temf1
         if shinobi_hp >=160:
@@ -377,12 +377,12 @@ label temabattle1:
             hide temf4
             hide temf5
             show temf5
-        
-        
+
+
         menu temff1:
-            "Physical attack":                
+            "Physical attack":
                 p "Take this!"
-                $ shinobi_hp = shinobi_hp - taijutsu 
+                $ shinobi_hp = shinobi_hp - taijutsu
                 show enemyslash1 with hpunch
                 $ renpy.transition(dissolve)
                 hide enemyslash1
@@ -391,9 +391,9 @@ label temabattle1:
                 hide enemyslash2
                 show enemyslash3 with hpunch
                 $ renpy.transition(dissolve)
-                hide enemyslash3                
-            
-            
+                hide enemyslash3
+
+
             "Namigan":
                 if playerchakra >=0:
                     p "Namigan!" with hpunch
@@ -410,7 +410,7 @@ label temabattle1:
                             rotate 0
                             linear 5 rotate 360
                             repeat
-                    $ shinobi_hp = shinobi_hp - (eyes * 2) 
+                    $ shinobi_hp = shinobi_hp - (eyes * 2)
                     $ playerchakra = playerchakra - 10
                     "Time was stopped for a short time."
                     "You were able to hit enemy in that time window."
@@ -420,87 +420,87 @@ label temabattle1:
                     p "Namigan!" with hpunch
                     "Nothing happened."
                     "You do not have enough chakra for this."
-                
+
             "Lightning style":
                 if playerchakra >=0:
                     p "Lightning style!" with hpunch
                     $ playerchakra = playerchakra - 10
-                    $ shinobi_hp = shinobi_hp - (ninjutsu * 2) 
+                    $ shinobi_hp = shinobi_hp - (ninjutsu * 2)
                     $ renpy.transition(dissolve)
                     show en1light
                     ti "ARGHHHHH..."
                     $ renpy.transition(dissolve)
                     hide en1light
-                    "You hit enemy Shinobi really hard."                    
-                    
+                    "You hit enemy Shinobi really hard."
+
                 else:
                     p "Lightning style!" with hpunch
                     ti "Dodge..."
                     "That attack was really weak."
-                    "You need more chakra to be successful."                    
-                 
-                
+                    "You need more chakra to be successful."
+
+
             "Rest":
                 if chakra <=25:
-                    $ player_hp = min(player_hp+10, player_max_hp)  
+                    $ player_hp = min(player_hp+10, player_max_hp)
                     $ playerchakra = playerchakra + 5
                     p "You recover your hp and chakra."
                 elif chakra <=50:
-                    $ player_hp = min(player_hp+20, player_max_hp)  
+                    $ player_hp = min(player_hp+20, player_max_hp)
                     $ playerchakra = playerchakra + 10
                     p "You recover your hp and chakra."
                 else:
-                    $ player_hp = min(player_hp+30, player_max_hp)  
+                    $ player_hp = min(player_hp+30, player_max_hp)
                     $ playerchakra = playerchakra + 15
                     p "You recover your hp and chakra."
-                
-                    
-                
-                
-        
+
+
+
+
+
         $ randomnum = renpy.random.randint(1,5) # (randomize between 1 and 5)
-        if randomnum==1:        
-                $ shinobi_damage = renpy.random.randint(5, 20)                
+        if randomnum==1:
+                $ shinobi_damage = renpy.random.randint(5, 20)
                 $ player_hp -= shinobi_damage
                 ti "Dust Wind!!!"
-                "Temari strike you with dust wind.." with hpunch                
+                "Temari strike you with dust wind.." with hpunch
                 ti "You are weak!"
-                
-        if randomnum==2:  
+
+        if randomnum==2:
             ti "Great Sickle Weasel!!!"
             "That look dangerous."
-            $ shinobi_damage = renpy.random.randint(10, 25)  
+            $ shinobi_damage = renpy.random.randint(10, 25)
             "You feel the power of her chakra."
             ti "Take this!" with hpunch
             $ player_hp -= shinobi_damage
             "She hit you hard."
-             
-            
-                
-        if randomnum==3: 
+
+
+
+        if randomnum==3:
             ti "Wind Release: Cast Net."
-            "Temari slowly heal herself." 
-            $ shinobi_hp = min(shinobi_hp+10, shinobi_max_hp)   
-        if randomnum==4: 
-            "Temari try to attack you." 
+            "Temari slowly heal herself."
+            $ shinobi_hp = min(shinobi_hp+10, shinobi_max_hp)
+        if randomnum==4:
+            "Temari try to attack you."
             "But you successfully dodge that attack."
-        if randomnum==5:  
+        if randomnum==5:
             ti "Wind Release: Cast Net."
             "Temari use some kind of wind style attack."
-            $ shinobi_damage = renpy.random.randint(20, 30)  
+            $ shinobi_damage = renpy.random.randint(20, 30)
             ti "Take this!" with hpunch
             $ player_hp -= shinobi_damage
             "She hit you with ranged attack."
-            
-        
-                          
-        
+
+
+
+
     if shinobi_hp <= 0:
         if player_hp <= 0:
             hide screen shinobi_stats_screen
             "You almost win."
-            "But Temari was a really worthy opponent."             
-            scene black with circleirisin   
+            "But Temari was a really worthy opponent."
+            scene black with circleirisin
             "You can win next time."
             $ day = day + 1
             show drock0 with circleirisout
@@ -516,7 +516,7 @@ label temabattle1:
             menu:
                 "Use Namigan":
                     hide screen shinobi_stats_screen
-                    p "I think we should test my Namigan now."                    
+                    p "I think we should test my Namigan now."
                     ti "Ok... Give me a moment to heal."
                     p "..."
                     p "Sure..."
@@ -529,7 +529,7 @@ label temabattle1:
                     show temd
                     show temok
                     jump temanami1
-                    
+
                 "Have fun":
                     hide screen shinobi_stats_screen
                     p "Maybe there is another thing that we can do together."
@@ -546,7 +546,7 @@ label temabattle1:
                     show tema
                     show temok
                     jump temarifuck1
-                    
+
                 "Talk":
                     p "Actually I want to ask you something."
                     p "Can you please dress and heal first?"
@@ -560,16 +560,16 @@ label temabattle1:
                     show temd
                     show temok
                     jump temaritalk1
-                    
-            
-                    
-            
+
+
+
+
     else:
         hide screen shinobi_stats_screen
         ti "It was a good fight."
         ti "But you are still weak. Try it again when you got stronger."
         $ day = day + 1
-        scene black with circleirisin   
+        scene black with circleirisin
         show drock0 with circleirisout
         jump drock
 
@@ -682,10 +682,10 @@ label temanami1:
             show temcl
             ti "Everything is only illusion."
             $ day = day + 1
-            scene black with circleirisin   
+            scene black with circleirisin
             show drock0 with circleirisout
             jump drock
-            
+
         "Pain train":
             if eyes <=10:
                 "Your Namigan is too weak for that..."
@@ -760,10 +760,10 @@ label temanami1:
                 ti "Great... Now I need some time to rest."
                 ti "See you later."
                 $ day = day + 1
-                scene black with circleirisin   
+                scene black with circleirisin
                 show drock0 with circleirisout
                 jump drock
-            
+
         "Blowjob":
             if eyes <=25:
                 "Your Namigan is too weak for that..."
@@ -858,10 +858,10 @@ label temanami1:
                         ti "Hmpf... Sure.."
                         p "See you later..."
                         $ day = day + 1
-                        scene black with circleirisin   
+                        scene black with circleirisin
                         show drock0 with circleirisout
                         jump drock
-                        
+
                     "Lightning style":
                         p "I want to play a little..."
                         p "Boobs suppression KAI!"
@@ -930,7 +930,7 @@ label temanami1:
                         ti "Sure..."
                         p "Great, see you later."
                         $ day = day + 1
-                        scene black with circleirisin   
+                        scene black with circleirisin
                         show drock0 with circleirisout
                         jump drock
                     "Fuck her nipple":
@@ -1042,15 +1042,15 @@ label temanami1:
                         ti "Yeah..."
                         p "Great, bye."
                         $ day = day + 1
-                        scene black with circleirisin   
+                        scene black with circleirisin
                         show drock0 with circleirisout
                         jump drock
-                        
-                        
-                
-                
-            
-        "Fuck her":   
+
+
+
+
+
+        "Fuck her":
             if eyes <=50:
                 "Your Namigan is too weak for that..."
                 jump temanam4
@@ -1189,10 +1189,10 @@ label temanami1:
                         ti "But...."
                         p "Not now..."
                         $ day = day + 1
-                        scene black with circleirisin   
+                        scene black with circleirisin
                         show drock0 with circleirisout
                         jump drock
-                    
+
                     "Slash fuck":
                         $ renpy.transition(dissolve)
                         hide tem4p4
@@ -1288,10 +1288,10 @@ label temanami1:
                         ti "Ok... We can train again tomorrow."
                         p "Yeah... Maybe..."
                         $ day = day + 1
-                        scene black with circleirisin   
+                        scene black with circleirisin
                         show drock0 with circleirisout
                         jump drock
-                     
+
                     "Kage bunshin":
                         $ renpy.transition(dissolve)
                         hide tem4p4
@@ -1392,13 +1392,13 @@ label temanami1:
                         p "Ahm...." with hpunch
                         p "Weird..."
                         $ day = day + 1
-                        scene black with circleirisin  
+                        scene black with circleirisin
                         "It looks like you used too much of your chakra..."
                         "You woke up the next morning in the hotel, not remember what happened."
                         "I hope Temari didn't remember what happened too..."
                         show drock0 with circleirisout
                         jump drock
-        
+
 
 
 
@@ -1424,7 +1424,7 @@ label temarifuck1:
             show temc
             hide temok
             show temcl
-            
+
             if temamission == 3:
                 ti "Huh??? You know it?"
                 p "I noticed it during the fight..."
@@ -1466,12 +1466,12 @@ label temarifuck1:
             p "It is really hot here right?"
             ti "Yesss... So hot...*smooch*"
             p "Nice... *smooch*"
-            scene black with circleirisin   
+            scene black with circleirisin
             $ day = day + 1
             "You spend some time with Temari with kissing her and massaging her breast."
             show drock0 with circleirisout
             jump drock
-            
+
         "Blowjob":
             if temamission <= 4:
                 p "If you come a little closer..."
@@ -1488,10 +1488,10 @@ label temarifuck1:
                 hide tema
                 p "That was fast... Maybe I need to do something first not just want a blowjob."
                 $ day = day + 1
-                scene black with circleirisin   
+                scene black with circleirisin
                 show drock0 with circleirisout
                 jump drock
-                
+
             else:
                 p "If you come a little closer..."
                 ti "And?"
@@ -1570,11 +1570,11 @@ label temarifuck1:
                 ti "I hope you will repay it to me someday... But now I need to go home..."
                 p "Sure see you later..."
                 $ day = day + 1
-                scene black with circleirisin   
+                scene black with circleirisin
                 show drock0 with circleirisout
                 jump drock
-                
-            
+
+
         "Fuck her":
             if temamission <= 9:
                 p "I want to play with you more..."
@@ -1591,7 +1591,7 @@ label temarifuck1:
                 hide tema
                 p "That was fast...."
                 $ day = day + 1
-                scene black with circleirisin   
+                scene black with circleirisin
                 show drock0 with circleirisout
                 jump drock
             else:
@@ -1673,12 +1673,12 @@ label temarifuck1:
                 ti "I will go home now..."
                 p "OK..."
                 $ day = day + 1
-                scene black with circleirisin                   
+                scene black with circleirisin
                 show drock0 with circleirisout
-                jump drock  
-            
-        
-    scene black with circleirisin   
+                jump drock
+
+
+    scene black with circleirisin
     show drock0 with circleirisout
     jump drock
 
@@ -1696,7 +1696,7 @@ label temaritalk1:
             p "Why?"
             ti "Give me a normal question, please..."
             jump temaritalk1
-            
+
         "Troubles":
             if temamission == 6:
                 $ temamission = 7
@@ -1729,12 +1729,12 @@ label temaritalk1:
                 hide temd
                 p "???"
                 $ day = day + 1
-                scene black with circleirisin   
-                "She is really weird." 
-                "I should visit her someday." 
+                scene black with circleirisin
+                "She is really weird."
+                "I should visit her someday."
                 show drock0 with circleirisout
                 jump drock
-                
+
             elif temamission == 11:
                p "..."
                if kagumission >=9:
@@ -1756,7 +1756,7 @@ label temaritalk1:
                             $ temamission = 12
                             p "Now leave, And go to the hidden tree village..."
                             ti "...."
-                            scene black with circleirisin   
+                            scene black with circleirisin
                             "Temari is now part of your harem."
                             show drock0 with circleirisout
                             jump drock
@@ -1771,7 +1771,7 @@ label temaritalk1:
                 p "Good..."
                 ti "Anything else?"
                 jump temaritalk1
-            
+
         "Life in Konoha":
             if temamission == 4:
                 $ temamission = 5
@@ -1815,7 +1815,7 @@ label temaritalk1:
                 ti "Yes, Why not?...."
                 p "I will look forward to it."
                 $ day = day + 1
-                scene black with circleirisin   
+                scene black with circleirisin
                 show drock0 with circleirisout
                 jump drock
             else:
@@ -1832,11 +1832,11 @@ label temaritalk1:
                 p "Yeah, I know. We just need to save the fallen shinobies."
                 ti "Exactly..."
                 $ day = day + 1
-                scene black with circleirisin 
+                scene black with circleirisin
                 show drock0 with circleirisout
                 jump drock
-                
-            
+
+
         "Husband":
             if temamission == 9:
                 $ temamission = 10
@@ -1879,7 +1879,7 @@ label temaritalk1:
                 ti "Can we talk later? I need to go home now."
                 p "Yeah sure..."
                 $ day = day + 1
-                scene black with circleirisin   
+                scene black with circleirisin
                 show drock0 with circleirisout
                 jump drock
             else:
@@ -1893,7 +1893,7 @@ label temaritalk1:
                 ti "And he was great with shadow pining jutsu."
                 p "Sotmehing else?"
                 ti "No..."
-                scene black with circleirisin 
+                scene black with circleirisin
                 "That was a waste of your time."
                 $ day = day + 1
                 show drock0 with circleirisout
@@ -1903,11 +1903,11 @@ label temaritalk1:
 
 
 
-#  ROCK KUSHINA LABEL NIGHT 
-#  ROCK KUSHINA LABEL NIGHT 
 #  ROCK KUSHINA LABEL NIGHT
-#  ROCK KUSHINA LABEL NIGHT 
-#  ROCK KUSHINA LABEL NIGHT 
+#  ROCK KUSHINA LABEL NIGHT
+#  ROCK KUSHINA LABEL NIGHT
+#  ROCK KUSHINA LABEL NIGHT
+#  ROCK KUSHINA LABEL NIGHT
 
 label nrockclone:
     scene rbad
@@ -1929,15 +1929,15 @@ label nrockclone:
         p "Yeah. Sure. Can we talk about..."
         ku "I don't want to talk! Bring me some clothes!"
         p "...."
-        scene black with circleirisin               
+        scene black with circleirisin
         show nrock0 with circleirisout
         jump nrock
     elif kushinamission >= 10:
         "Kushina is in your harem now."
-        scene black with circleirisin               
+        scene black with circleirisin
         show nrock0 with circleirisout
         jump nrock
-        
+
     elif kushinamission == 2:
         $ renpy.transition(dissolve)
         show kusa
@@ -1949,10 +1949,10 @@ label nrockclone:
         show kussad
         ku "Come back when you have some!"
         p "*sigh* sure..."
-        scene black with circleirisin               
+        scene black with circleirisin
         show nrock0 with circleirisout
         jump nrock
-        
+
     elif kushinamission == 3:
         $ renpy.transition(dissolve)
         show kusa
@@ -1981,7 +1981,7 @@ label nrockclone:
                 p "You should try somet...."
         $ renpy.transition(dissolve)
         hide kusb
-        hide kussmile         
+        hide kussmile
         p "...."
         $ renpy.transition(dissolve)
         show kusc
@@ -2002,7 +2002,7 @@ label nrockclone:
         p "How?"
         $ renpy.transition(dissolve)
         hide kusc
-        hide kussad 
+        hide kussad
         ku "Just give me a moment."
         ku "Kage bunshin no jutsu!"
         p "huh???"
@@ -2010,10 +2010,10 @@ label nrockclone:
         show kusa:
             xalign 0.0 yalign 1.0
         show kusok:
-            xalign 0.0 yalign 1.0        
+            xalign 0.0 yalign 1.0
         $ renpy.transition(dissolve)
         show kusb
-        show kussmile      
+        show kussmile
         $ renpy.transition(dissolve)
         show kusc:
             xalign 1.0 yalign 1.0
@@ -2028,13 +2028,13 @@ label nrockclone:
                 ku "Really?"
                 p "Yeah... It looks better on you."
                 ku "Ok. I think you are right."
-                
+
             "Middle":
                 p "I really like that skirt. And the green color fit for your eyes."
                 $ kushinadress = 1
                 ku "You are so sweet. I will keep these clothes if you want."
                 p "Yes... I like them most..."
-                
+
             "Right":
                 p "i like that new white top. You should keep it."
                 $ kushinadress = 2
@@ -2076,10 +2076,10 @@ label nrockclone:
         ku "Just visit me sometimes..."
         p "Yeah... Sure."
         $ day = day + 1
-        scene black with circleirisin               
+        scene black with circleirisin
         show drock0 with circleirisout
         jump drock
-    
+
     else:
         $ renpy.transition(dissolve)
         if kushinadress == 0:
@@ -2149,10 +2149,10 @@ label nrockclone:
                     ku "Sure.... Go Go go... *chuckle*"
                     p "*sigh* Ok... Bye..."
                     $ day = day + 1
-                    scene black with circleirisin               
+                    scene black with circleirisin
                     show drock0 with circleirisout
-                    jump drock  
-                    
+                    jump drock
+
                 elif kushinamission == 5:
                     p "I want to ask you something."
                     $ renpy.transition(dissolve)
@@ -2169,7 +2169,7 @@ label nrockclone:
                     scene black with circleirisin
                     p "Shit I need to talk with Kurotsuchi."
                     show nrock0 with circleirisout
-                    jump nrock 
+                    jump nrock
                 elif kushinamission == 6:
                     p "I have some good news."
                     $ renpy.transition(dissolve)
@@ -2181,7 +2181,7 @@ label nrockclone:
                     ku "That is amazing lets go!"
                     p "Ok... But you must stay close to me."
                     ku "Sure!!!"
-                    scene black with circleirisin 
+                    scene black with circleirisin
                     "After some time...."
                     $ day = day +1
                     show rhall with circleirisout
@@ -2207,10 +2207,10 @@ label nrockclone:
                     p "Yeah... but do not be sad. We will have more fun next time."
                     ku "Great!!!"
                     $ day = day + 1
-                    scene black with circleirisin               
+                    scene black with circleirisin
                     show drock0 with circleirisout
-                    jump drock 
-                
+                    jump drock
+
                 elif kushinamission == 8:
                     p "You look different today. Is everything alright?"
                     $ kushinamission = 9
@@ -2238,7 +2238,7 @@ label nrockclone:
                     p "Just give me some time I need to finish something here first."
                     ku "I'll be waiting here for you."
                     p "Ok... See you later."
-                    scene black with circleirisin 
+                    scene black with circleirisin
                     show drock0 with circleirisout
                     jump drock
                 else:
@@ -2252,7 +2252,7 @@ label nrockclone:
                             "Yes":
                                 p "Yes. We can go..."
                                 ku "Awesome!!!"
-                                scene black with circleirisin 
+                                scene black with circleirisin
                                 "You leave the hidden rock village with Kushina."
                                 $ day = day + 1
                                 show nmap0 with circleirisout
@@ -2276,7 +2276,7 @@ label nrockclone:
                                 ku "Yes, I know... Before we go sleep... Can you buy me a drink?"
                                 p "Sure... I know one bar here.."
                                 ku "Sweet..."
-                                scene black with circleirisin 
+                                scene black with circleirisin
                                 show nbar with circleirisout
                                 $ renpy.transition(dissolve)
                                 hide kusa
@@ -2462,7 +2462,7 @@ label nrockclone:
                                     show kussashap
                                     sam "Maybe she is just too drunk... I will help you with her... Just pull it out first."
                                     sam "Or do you want second round?"
-                                    scene black with circleirisin 
+                                    scene black with circleirisin
                                     "You decide to fuck Samui one more time... Then she fall asleep too It was too exhausting for her."
                                     "You take Kushina to your home and clean her... Then  take her back to Iwagakure next day."
                                     $ day = day + 1
@@ -2472,11 +2472,11 @@ label nrockclone:
                                     "But Kushina didn't fall for it."
                                     "Maybe if you improve her relationship with her..."
                                     "You take Kushina to your home and go with her back to Iwagakure next day."
-                                    scene black with circleirisin 
+                                    scene black with circleirisin
                                     $ day = day + 1
                                     show drock0 with circleirisout
                                     jump drock
-                                
+
                             "No":
                                 p "Ehm... No I am still not ready..."
                                 ku "So come back when you are ready... Or do you want something else?"
@@ -2491,7 +2491,7 @@ label nrockclone:
                         show kusok
                         ku "Anything else?"
                         jump nkushinatalker
-                    
+
             "Change dress":
                 p "I think you should change your dress..."
                 ku "Yeah you are right..."
@@ -2509,10 +2509,10 @@ label nrockclone:
                 show kusa:
                     xalign 0.0 yalign 1.0
                 show kusok:
-                    xalign 0.0 yalign 1.0        
+                    xalign 0.0 yalign 1.0
                 $ renpy.transition(dissolve)
                 show kusb
-                show kussmile      
+                show kussmile
                 $ renpy.transition(dissolve)
                 show kusc:
                     xalign 1.0 yalign 1.0
@@ -2527,13 +2527,13 @@ label nrockclone:
                         ku "Really?"
                         p "Yeah... It looks better on you."
                         ku "Ok. I think you are right."
-                        
+
                     "Middle":
                         p "I really like that skirt. And the green color fit for your eyes."
                         $ kushinadress = 1
                         ku "You are so sweet. I will keep these clothes if you want."
                         p "Yes... I like them most..."
-                        
+
                     "Right":
                         p "i like that new white top. You should keep it."
                         $ kushinadress = 2
@@ -2559,13 +2559,13 @@ label nrockclone:
                 p "Yeah..."
                 ku "So what do you want to do now?"
                 jump nkushinatalker
-                
+
             "Have fun":
                 if kushinamission <=6:
                     p "Yeah. There a lot of things  I want to do with her."
                     p "But I need to gain her trust first before I try something."
                     jump nkushinatalker
-                    
+
                 elif kushinamission == 7:
                     p "I have some ideas what we can do together."
                     $ kushinamission = 8
@@ -2616,7 +2616,7 @@ label nrockclone:
                     ku "Yess... *moan* I feel a weird pressure..."
                     p "Where?"
                     ku "In my boobs and.... ahhhh...."
-                    ku "*heavy moaning*"                    
+                    ku "*heavy moaning*"
                     ku "*squirt*"
                     $ renpy.transition(dissolve)
                     hide kuscl
@@ -2641,13 +2641,13 @@ label nrockclone:
                     ku "Mmmm... Yes... Go out..."
                     p "Good so dress up and we can go..."
                     ku "Sure....."
-                    scene black with circleirisin 
+                    scene black with circleirisin
                     "You spend the whole day with Kushina... She looks a little different now."
                     $ day = day + 1
                     "She still want to hold your hand."
                     show drock0 with circleirisout
                     jump drock
-                    
+
                 else:
                     p "Do you want to go out with me?"
                     $ renpy.transition(dissolve)
@@ -2685,7 +2685,7 @@ label nrockclone:
                             ku "Yess... *moan* that.... pressure..."
                             p "*squeeze*"
                             ku "My boobs.... ahhhh...."
-                            ku "They are going to explode... *heavy moaning*"                    
+                            ku "They are going to explode... *heavy moaning*"
                             ku "*squirt*"
                             $ renpy.transition(dissolve)
                             hide kuscl
@@ -2710,13 +2710,13 @@ label nrockclone:
                             ku "Mmmm... Yes... Go out..."
                             p "Just dress up and we can go..."
                             ku "Dress up..."
-                            scene black with circleirisin 
+                            scene black with circleirisin
                             "You spend the whole day with Kushina..."
                             $ day = day + 1
                             "She still want to hold your hand."
                             show drock0 with circleirisout
                             jump drock
-                            
+
                         "Slash her":
                             if whip ==0:
                                 "You need to buy whip first!"
@@ -2732,7 +2732,7 @@ label nrockclone:
                                 hide kussmile
                                 show kuscl
                                 show kussc1
-                                ku "OUCH!!!!"     
+                                ku "OUCH!!!!"
                                 "You want to slash her again...."
                                 ku "Auu.... No!!!"
                                 p "Huh???"
@@ -2759,7 +2759,7 @@ label nrockclone:
                                 show kuscl
                                 ku "*snivel* Ok.... I want to go out... But do not hurt me again..."
                                 p "Ok..."
-                                scene black with circleirisin 
+                                scene black with circleirisin
                                 "That was a weird day."
                                 $ day = day + 1
                                 "Kushina has been always behind you with an uncertain look."
@@ -2780,7 +2780,7 @@ label nrockclone:
                                 hide kussad
                                 show kuscl
                                 show kussc1
-                                ku "OUCH!!!!*pain*"   
+                                ku "OUCH!!!!*pain*"
                                 p "Is it better now?"
                                 $ renpy.transition(dissolve)
                                 hide kuscl
@@ -2804,13 +2804,13 @@ label nrockclone:
                                 show kuscl
                                 ku "*snivel* Ok.... But do not hurt me again..."
                                 p "Sure"
-                                scene black with circleirisin 
+                                scene black with circleirisin
                                 "That was a weird day."
                                 $ day = day + 1
                                 "Kushina has been always behind you with an uncertain look."
                                 show drock0 with circleirisout
                                 jump drock
-                            
+
                         "Use pen":
                             if kushinalove ==1:
                                 p "I want to try something new today."
@@ -2867,7 +2867,7 @@ label nrockclone:
                                 ku "No... I like this! I will wash myself later!"
                                 p "Ok... But it will not be good if anyone will see it, ok?"
                                 ku "Sure I will be carefull..."
-                                scene black with circleirisin 
+                                scene black with circleirisin
                                 "You spend another good day with Kushina... She checks often her new marks."
                                 $ day = day + 1
                                 show drock0 with circleirisout
@@ -2913,7 +2913,7 @@ label nrockclone:
                                 hide kuscl
                                 show kusok
                                 ku "Sure give me moment..."
-                                scene black with circleirisin 
+                                scene black with circleirisin
                                 "You spend another good day with Kushina... She checks often her new marks."
                                 $ day = day + 1
                                 show drock0 with circleirisout
@@ -2980,7 +2980,7 @@ label nrockclone:
                                 ku "*moan*"
                                 p "So what now? Do you still want to go out?"
                                 ku "Yes... *heavy breathing* just give me a moment."
-                                scene black with circleirisin 
+                                scene black with circleirisin
                                 "You spend another good day with Kushina..."
                                 "It was fun... "
                                 "Hmm... I wonder, how she loose her virginity?"
@@ -3040,18 +3040,18 @@ label nrockclone:
                                 ku "Can you take me somewhere else now?"
                                 p "Ehm... Sure... But get dressed..."
                                 ku "Yeah... Dress..."
-                                scene black with circleirisin 
+                                scene black with circleirisin
                                 "You spend another good day with Kushina..."
                                 "Every time when you two was alone, she kiss you... "
                                 $ day = day + 1
                                 show drock0 with circleirisout
                                 jump drock
-                                
+
                         "Fuck her":
                             if kushinalove <=2:
-                                p "Good idea, but try to get her trust first."                                
+                                p "Good idea, but try to get her trust first."
                                 jump nkushinafucker
-                                
+
                             elif kushinalove ==3:
                                 p "I prepared something extra for you today!"
                                 $ kushinalove = 4
@@ -3191,13 +3191,13 @@ label nrockclone:
                                 p "Do you want to drink it all?"
                                 ku "Sure, it is tasty..."
                                 p "Ok...."
-                                scene black with circleirisin 
+                                scene black with circleirisin
                                 "You spend another good day with Kushina..."
                                 "You must fuck her pussy next time!!!"
                                 $ day = day + 1
                                 show drock0 with circleirisout
                                 jump drock
-                                
+
                             else:
                                 p "I want to be closer to you today."
                                 ku "I want to be close to you, too..."
@@ -3329,15 +3329,15 @@ label nrockclone:
                                         ku "Sure *glog*"
                                         p "Good girl...."
                                         ku "*glog* tasty..."
-                                        scene black with circleirisin 
+                                        scene black with circleirisin
                                         "You spend another wonderfull day with Kushina..."
                                         "Fucking her tits improved your happiness."
                                         $ day = day + 1
                                         show drock0 with circleirisout
                                         jump drock
-                                        
+
                                     "Fuck her pussy":
-                                        p "I want to play with your pussy..."                                        
+                                        p "I want to play with your pussy..."
                                         ku "That sounds good..."
                                         $ renpy.transition(dissolve)
                                         hide kus1sad
@@ -3423,9 +3423,9 @@ label nrockclone:
                                                 ku "Ahhhhh....*moan* Fill my pussy!!!"
                                                 $ renpy.transition(dissolve)
                                                 show kus1spi2
-                                                p "Fuck!!!splurt*"                                           
+                                                p "Fuck!!!splurt*"
                                                 ku "You cum alot again..."
-                                                $ renpy.transition(dissolve)                                                
+                                                $ renpy.transition(dissolve)
                                                 hide kus1milk
                                                 ku "It is dripping out of my pussy..*moan drip*"
                                                 p "..."
@@ -3438,13 +3438,13 @@ label nrockclone:
                                                 hide kus1org
                                                 show kus1hap
                                                 ku "Really!!! AWESOME!!!"
-                                                ku "Just wait here I will be ready soon!"                                 
-                                                scene black with circleirisin 
+                                                ku "Just wait here I will be ready soon!"
+                                                scene black with circleirisin
                                                 "Kushina go to the shower and then you take her to some shop."
                                                 $ day = day + 1
                                                 show drock0 with circleirisout
                                                 jump drock
-                                                
+
                                             "Cum out":
                                                 ku "Ahhhh*heavy moaning*"
                                                 $ renpy.transition(dissolve)
@@ -3462,9 +3462,9 @@ label nrockclone:
                                                 show kus1spo2
                                                 p "More!!!*splurt*"
                                                 $ renpy.transition(dissolve)
-                                                show kus1spo3                                                
+                                                show kus1spo3
                                                 ku "So warm...."
-                                                $ renpy.transition(dissolve)                                                
+                                                $ renpy.transition(dissolve)
                                                 hide kus1milk
                                                 ku "Mmmmm...*moan drip*"
                                                 p "That was...."
@@ -3480,21 +3480,21 @@ label nrockclone:
                                                 p "You don't need any time for recovery or..."
                                                 ku "No, I am fine. And after that I am more than fine."
                                                 ku "Just give me a moment to clean myself."
-                                                p "Yeah.. Sure..."                                                
-                                                scene black with circleirisin 
+                                                p "Yeah.. Sure..."
+                                                scene black with circleirisin
                                                 "Kushina drink all your sperm and then you go out with her."
                                                 $ day = day + 1
                                                 show drock0 with circleirisout
                                                 jump drock
-                                        
-                                        scene black with circleirisin 
+
+                                        scene black with circleirisin
                                         "You spend another wonderfull day with Kushina..."
                                         "Her pussy tasted so sweet!"
                                         $ day = day + 1
                                         show drock0 with circleirisout
                                         jump drock
-                                        
-                                        
+
+
                                     "Fuck boobs and pussy":
                                         p "I want to fuck your whole body!"
                                         ku "Ok... And how you want to do it?"
@@ -3627,8 +3627,8 @@ label nrockclone:
                                         ku "I want to stay like this...."
                                         p "You do not want to come out?"
                                         ku "I want but...*moan* give me a moment..."
-                                        p "Whatever you want."                                        
-                                        scene black with circleirisin 
+                                        p "Whatever you want."
+                                        scene black with circleirisin
                                         if kushinalove ==4:
                                             "Kushina really enjoed it!"
                                             "Now you can try to fuck her in some other place."
@@ -3642,27 +3642,27 @@ label nrockclone:
                                             $ day = day + 1
                                             show drock0 with circleirisout
                                             jump drock
-                                                                                
-                                        
-                                
-                                scene black with circleirisin 
+
+
+
+                                scene black with circleirisin
                                 "You spend another good day with Kushina..."
                                 "Every time when you two was alone, she kiss you... "
                                 $ day = day + 1
                                 show drock0 with circleirisout
                                 jump drock
-                                
+
                         "Go outside first":
                             if kushinalove <=4:
                                 "She is not ready to have sex outside."
                                 jump nkushinafucker
-                                
-                            else:                                
+
+                            else:
                                 p "I think we can go out first.."
                                 ku "You do not want to have some fun?"
                                 p "Maybe later..."
                                 ku "OK...."
-                                scene black with circleirisin 
+                                scene black with circleirisin
                                 show rcave with circleirisout
                                 $ renpy.transition(dissolve)
                                 hide kusa
@@ -3671,7 +3671,7 @@ label nrockclone:
                                 hide kusd
                                 hide kussmile
                                 hide kusshy
-                                hide kusop                            
+                                hide kusop
                                 if kushinadress == 0:
                                     show kusa
                                 if kushinadress == 1:
@@ -3696,7 +3696,7 @@ label nrockclone:
                                     hide kusd
                                     hide kussmile
                                     hide kusshy
-                                    hide kusop  
+                                    hide kusop
                                     show kus4a
                                     show kus4ok
                                     ku "Maybe like this?"
@@ -3713,7 +3713,7 @@ label nrockclone:
                                     hide kusd
                                     hide kussmile
                                     hide kusshy
-                                    hide kusop  
+                                    hide kusop
                                     show kus4a
                                     show kus4ok
                                     ku "I am ready... Do whatever you want with me."
@@ -3724,7 +3724,7 @@ label nrockclone:
                                 "You pull out a marker."
                                 ku "hehe... Yes, body painting."
                                 $ renpy.transition(dissolve)
-                                show kus4t1    
+                                show kus4t1
                                 hide kus4ok
                                 show kus4cl
                                 ku "MMM... Nice...*moan*"
@@ -3775,7 +3775,7 @@ label nrockclone:
                                 $ renpy.transition(dissolve)
                                 hide kus4p3
                                 show kus4p2
-                                ku "Ehm...*moan*" 
+                                ku "Ehm...*moan*"
                                 $ renpy.transition(dissolve)
                                 hide kus4p2
                                 show kus4p3
@@ -3833,7 +3833,7 @@ label nrockclone:
                                         show kus4p4
                                         p "Tak it all!!!*splurt*"
                                         $ renpy.transition(dissolve)
-                                        show kus4spi1    
+                                        show kus4spi1
                                         p "And more...*splurt*"
                                         $ renpy.transition(dissolve)
                                         show kus4spi2
@@ -3847,14 +3847,14 @@ label nrockclone:
                                         ku "Maybe we can go to the bar or something?"
                                         p "Sounds good... lets go... just clean up first..."
                                         ku "Allright..."
-                                        scene black with circleirisin  
+                                        scene black with circleirisin
                                         "You go to the bar with Kushina. She really don't know how to drink."
                                         "You must carry her to her room."
                                         $ day = day + 1
                                         show drock0 with circleirisout
                                         jump drock
 
-                                        
+
                                     "Cum out":
                                         ku "Cum on my boobs please... *heavy moan*"
                                         $ renpy.transition(dissolve)
@@ -3864,7 +3864,7 @@ label nrockclone:
                                         $ renpy.transition(dissolve)
                                         hide kus4p2
                                         show kus4p1
-                                        show kus4spo1   
+                                        show kus4spo1
                                         p "And more...*splurt*"
                                         $ renpy.transition(dissolve)
                                         show kus4spo2
@@ -3885,25 +3885,25 @@ label nrockclone:
                                         p "No just... Shit I hear something!!!"
                                         ku "What???"
                                         p "Quick! Let's run away."
-                                        scene black with circleirisin  
+                                        scene black with circleirisin
                                         "That was close... Someone must hear the noise and want to check what is going on."
                                         "But it was fun!"
                                         $ day = day + 1
                                         show drock0 with circleirisout
                                         jump drock
-                                        
-                                    
-                                
-                                
-                                
-                                        scene black with circleirisin  
+
+
+
+
+
+                                        scene black with circleirisin
                                         $ day = day + 1
                                         show drock0 with circleirisout
                                         jump drock
-                            
+
                     jump nkushinatalker
-                    
-                    
+
+
             "Use Namigan":
                 if kushinamission <=  7:
                     p "I want to show you something funny."
@@ -3940,10 +3940,10 @@ label nrockclone:
                     mi "Ok... Now please leave... Looks like Kushina didn't feel alright."
                     p "..."
                     $ day = day + 1
-                    scene black with circleirisin               
+                    scene black with circleirisin
                     show drock0 with circleirisout
-                    jump drock  
-                    
+                    jump drock
+
                 else:
                     p "I want to show you something funny."
                     ku "Something funny? What is it?"
@@ -3954,7 +3954,7 @@ label nrockclone:
                     ku "We are going out? Amazing!"
                     p "Just follow me..."
                     ku "Yaiks!"
-                    scene black with circleirisin   
+                    scene black with circleirisin
                     $ renpy.transition(dissolve)
                     hide kussmile
                     hide kusa
@@ -4072,7 +4072,7 @@ label nrockclone:
                                     show kus3nop
                                     p "Time to..."
                                     jump nkuntf
-                                    
+
                                 "Slap":
                                     p "Do you like this??? *slap*"
                                     $ renpy.transition(dissolve)
@@ -4129,7 +4129,7 @@ label nrockclone:
                                     show kus3tf3
                                     p "And now..."
                                     jump nkuntf
-                                    
+
                                 "Cum":
                                     p "Time to finish it!"
                                     $ renpy.transition(dissolve)
@@ -4166,13 +4166,13 @@ label nrockclone:
                                     p "That was good...."
                                     ku "Mmmmm...."
                                     p "Time to clean all this mess..."
-                                    scene black with circleirisin   
+                                    scene black with circleirisin
                                     "Kushina clean her body and drink all sperm."
                                     "After releasing Namigan she didn't have a single clue what really happened."
                                     $ day = day + 1
                                     show drock0 with circleirisout
-                                    jump drock 
-                            
+                                    jump drock
+
                         "Kage bunshin":
                             p "I just want to fuck you hard..."
                             p "Strip and get on all four."
@@ -4248,20 +4248,20 @@ label nrockclone:
                             ku "Mmmm....*moan*"
                             p "You look so dirty now.... Come on, no time to rest... Clean yourself."
                             ku "....."
-                            scene black with circleirisin        
+                            scene black with circleirisin
                             "That was good... But your Kage bunshin take too much of your chakra."
                             "But looks like Kushina enjoyed it too..."
                             $ day = day + 1
                             show drock0 with circleirisout
-                            jump drock 
-                        
+                            jump drock
+
                         "Mixed training":
                             if expscroll ==0:
                                 p "I need an expansion scroll for this."
                                 p "I should visit the shop in the Konoha."
                                 jump nkushinamigan
-                                
-                                
+
+
                             else:
                                 p "I just want to fuck you hard..."
                                 p "Strip and get on all four."
@@ -4370,20 +4370,20 @@ label nrockclone:
                                 p "Hey? Are you still here?"
                                 ku "...."
                                 p "Fuck I should take it out quickly...."
-                                scene black with circleirisin        
+                                scene black with circleirisin
                                 "Huh? That was a close Kushina start to check-in with your sperm."
                                 "But you react quickly and she is now ok... Maybe a little confused but who care.."
                                 $ day = day + 1
                                 show drock0 with circleirisout
                                 jump drock
-                        
+
                         "Boob expansion":
                             if expscroll ==0:
                                 p "I need an expansion scroll for this."
                                 p "I should visit the shop in the Konoha."
                                 jump nkushinamigan
-                                
-                                
+
+
                             else:
                                 p "Time to see how big they can be."
                                 p "First, get into the position."
@@ -4507,56 +4507,56 @@ label nrockclone:
                                         p "You look really dirty..."
                                         ku "...."
                                         p "Who cares right? Time to release all this jutsu."
-                                        
-                                scene black with circleirisin        
+
+                                scene black with circleirisin
                                 "It was really something see Kushina like this."
                                 "She complained about weird pressure in her breast. I wonder why."
                                 $ day = day + 1
                                 show drock0 with circleirisout
                                 jump drock
-                            
-                    scene black with circleirisin               
+
+                    scene black with circleirisin
                     show drock0 with circleirisout
-                    jump drock 
-                
+                    jump drock
+
             "Back to the city":
-                scene black with circleirisin               
+                scene black with circleirisin
                 show nrock0 with circleirisout
-                jump nrock    
-        
-        
-        scene black with circleirisin               
+                jump nrock
+
+
+        scene black with circleirisin
         show drock0 with circleirisout
         jump drock
-        
-    
 
 
-#  ROCK TOWN LABEL NIGHT  
+
+
 #  ROCK TOWN LABEL NIGHT
 #  ROCK TOWN LABEL NIGHT
 #  ROCK TOWN LABEL NIGHT
 #  ROCK TOWN LABEL NIGHT
-     
+#  ROCK TOWN LABEL NIGHT
+
 label nrocktown:
     scene rnight
     if mitsukimission ==1:
         "No one is here right now."
-        scene black with circleirisin               
+        scene black with circleirisin
         show nrock0 with circleirisout
         jump nrock
-    else:            
+    else:
         "No one is here right now."
-        scene black with circleirisin               
+        scene black with circleirisin
         show nrock0 with circleirisout
         jump nrock
-     
-# HOSPITAL LABEL   NIGHT    
+
 # HOSPITAL LABEL   NIGHT
 # HOSPITAL LABEL   NIGHT
 # HOSPITAL LABEL   NIGHT
 # HOSPITAL LABEL   NIGHT
-        
+# HOSPITAL LABEL   NIGHT
+
 label nrocklab:
     scene rlab
     if mitsukimission ==0:
@@ -4590,14 +4590,14 @@ label nrocklab:
                 p "Sure..."
                 $ mitsukimission = 1
                 $ day = day + 1
-                scene black with circleirisin               
+                scene black with circleirisin
                 show drock0 with circleirisout
                 jump drock
-                
+
             "No I am fine":
                 p "No. Thank you. I feel good."
                 mi "So why you come into this hospital?"
-                p "I am a visitor from the Konoha, I want to check your healing methods."  
+                p "I am a visitor from the Konoha, I want to check your healing methods."
                 mi "...."
                 mi "Did Tsuchikage approve it?"
                 p "Ehm... Sure why not."
@@ -4605,11 +4605,11 @@ label nrocklab:
                 p "Sure..."
                 $ mitsukimission = 1
                 $ day = day + 1
-                scene black with circleirisin               
+                scene black with circleirisin
                 show drock0 with circleirisout
                 jump drock
-                
-    elif mitsukimission ==1:    
+
+    elif mitsukimission ==1:
         p "..."
         p "Looks like no one is here."
         p "Only some wounded peoples and this locked room... I wonder what is inside."
@@ -4617,7 +4617,7 @@ label nrocklab:
         "Zap!!!" with hpunch
         p "Shit... There is some kind of protecting jutsu on the lock."
         $ day = day + 1
-        scene black with circleirisin               
+        scene black with circleirisin
         show drock0 with circleirisout
         jump drock
     elif mitsukimission ==2:
@@ -4641,7 +4641,7 @@ label nrocklab:
         p "..."
         mi "Ok now rest... we will continue later..."
         $ day = day +1
-        scene black with circleirisin  
+        scene black with circleirisin
         "You spend a whole day in the hospital. But you got the access to the building."
         show drock0 with circleirisout
         jump drock
@@ -4731,17 +4731,17 @@ label nrocklab:
                             show mitsad
                             hide mitshy
                             jump nmitsukitalk
-                        
+
                         "That is all":
-                            p "But I want to ask you about something else..."                
+                            p "But I want to ask you about something else..."
                             jump nmitsukitalk
-                            
+
                 elif mitsukimission ==4:
                     p "Can you tell me something about yourself?"
                     mi "What exactly you want to know?"
                     $ mitsukimission = 5
                     p "You are woman right?"
-                    mi "Yes and???"                    
+                    mi "Yes and???"
                     p "How is it possible... I remember Mitsuki was a man?"
                     $ renpy.transition(dissolve)
                     hide mitsad
@@ -4764,7 +4764,7 @@ label nrocklab:
                     p "????"
                     mi "It is really important to take a good care of an injured man."
                     jump nmitsukitalk
-                    
+
                 elif mitsukimission ==5:
                     p "Can you tell me something about yourself?"
                     mi "What exactly you want to know?"
@@ -4809,7 +4809,7 @@ label nrocklab:
                     p "Nothing strikes me right now."
                     mi "So what now?"
                     jump nmitsukitalk
-                
+
             "Talk about hospital":
                 if mitsukimission <=5:
                     p "Tell me something about this place."
@@ -4820,7 +4820,7 @@ label nrocklab:
                     mi "We have many blood samples from the famous Shinobi!"
                     p "Good to know that..."
                     jump nmitsukitalk
-                
+
                 elif mitsukimission ==6:
                     p "Tell me something about this place."
                     mi "This is the hidden stone hospital."
@@ -4870,8 +4870,8 @@ label nrocklab:
                     mi "Not 100 percent sure, she is a little different. But try to act nice to her."
                     p "Sure... So I can visit her?"
                     mi "Yes... Follow me..."
-                    scene black with circleirisin               
-                    show rbad with circleirisout     
+                    scene black with circleirisin
+                    show rbad with circleirisout
                     $ renpy.transition(dissolve)
                     show mit1:
                         xalign 0.0 yalign 1.0
@@ -4881,7 +4881,7 @@ label nrocklab:
                     show kusa:
                         xalign 1.0 yalign 1.0
                     show kusok:
-                        xalign 1.0 yalign 1.0                        
+                        xalign 1.0 yalign 1.0
                     p "Kushina is it really you?"
                     ku "Yes. I am Kushina. And who are you?"
                     p "It is me %(p)s ."
@@ -4953,17 +4953,17 @@ label nrocklab:
                     $ day = day + 1
                     show drock0 with circleirisout
                     jump drock
-                
-                else:                    
+
+                else:
                     p "Tell me something about this place."
                     mi "This is the hidden stone hospital."
                     mi "We heal here light and serious..."
                     p "Yes I already heared that..."
                     p "Is there any more secret rooms or projects?"
                     mi "No... Cloning was the only side project here."
-                    p "Ok..."                    
+                    p "Ok..."
                     jump nmitsukitalk
-            
+
             "Use Namigan":
                 p "Can I test my namigan on you?"
                 mi "Your namigan? Why?"
@@ -4973,7 +4973,7 @@ label nrocklab:
                 mi "Ask lady Tsuchikage first please..."
                 p "Hmm... maybe..."
                 jump nmitsukitalk
-            
+
             "Something else":
                 if mitsukimission <=3:
                     p "There is nothing right now what I want from her."
@@ -5012,21 +5012,21 @@ label nrocklab:
                     show mitok
                     hide mitshy
                     show mitshy
-                    p "And what now?"                
+                    p "And what now?"
                     jump nmitsukitalk
-                
+
             "Back to the city":
-                scene black with circleirisin               
+                scene black with circleirisin
                 show nrock0 with circleirisout
                 jump nrock
-                
-#################### NIGHT VILLAGE #####################     
-#################### NIGHT VILLAGE #####################  
-#################### NIGHT VILLAGE #####################  
-#################### NIGHT VILLAGE #####################  
-#################### NIGHT VILLAGE #####################  
-                
-                
+
+#################### NIGHT VILLAGE #####################
+#################### NIGHT VILLAGE #####################
+#################### NIGHT VILLAGE #####################
+#################### NIGHT VILLAGE #####################
+#################### NIGHT VILLAGE #####################
+
+
 label nrvillage:
     scene nstone
     "Where you want to go?"
@@ -5038,7 +5038,7 @@ label nrvillage:
             te "Hello %(p)s. Do you want to have some fun?"
             if tenmission >= 15:
                 menu tentenfuckwnight:
-                    "Play with her body":    
+                    "Play with her body":
                         if tenmission <= 5:
                             "Nothing."
                         else:
@@ -5093,7 +5093,7 @@ label nrvillage:
                             $ renpy.transition(dissolve)
                             hide ten0ok
                             show ten0op
-                            show ten0sp1                            
+                            show ten0sp1
                             te "Mmmm...*heavy moaning*"
                             te "Ahhh... *moan* That was awesome!"
                             p "Hehe..."
@@ -5109,14 +5109,14 @@ label nrvillage:
                             "Tenten jump into the water again."
                             "*splash*"
                             $ day = day + 1
-                            scene black with circleirisin                   
+                            scene black with circleirisin
                             show drock0 with circleirisout
                             jump drock
-                    
-                    "Use tools": 
+
+                    "Use tools":
                         if tenmission <= 5:
                             "Nothing."
-                        
+
                         else:
                             p "I bring a toy today."
                             te "You mean?"
@@ -5177,14 +5177,14 @@ label nrvillage:
                             p "It is ok... We can rest for a moment together."
                             te "That sounds good..."
                             $ day = day + 1
-                            scene black with circleirisin                   
+                            scene black with circleirisin
                             show drock0 with circleirisout
                             jump drock
-                        
-                    "Fuck her boobs":  
+
+                    "Fuck her boobs":
                         if tenmission <= 5:
-                            "Nothing."                            
-                                                    
+                            "Nothing."
+
                         else:
                             p "I want to play with you a little."
                             te "Ok... Just come closer to me..."
@@ -5274,16 +5274,16 @@ label nrvillage:
                             hide ten3a
                             p "huh?"
                             "She jumped in the water and start swimming."
-                            scene black with circleirisin       
+                            scene black with circleirisin
                             "You decided to relax on the shore. When you woke up Tenten was gone."
                             $ day = day + 1
                             show drock0 with circleirisout
                             jump drock
-                        
+
                     "Fuck her pussy":
                         if tenmission <= 5:
-                            "Nothing."                            
-                                                    
+                            "Nothing."
+
                         else:
                             p "I really want to fuck your pussy."
                             te "Mmmm..*smooch*"
@@ -5298,7 +5298,7 @@ label nrvillage:
                             te "Just stick it in %(p)s ...."
                             p "Ok..."
                             $ renpy.transition(dissolve)
-                            hide ten3ok 
+                            hide ten3ok
                             show ten3sho
                             show ten3f1
                             te "Come on...."
@@ -5447,7 +5447,7 @@ label nrvillage:
                                         hide ten3l1
                                         hide ten3milk
                                         jump tentenpussyfucknight
-                                    
+
                                 "Water style":
                                     $ renpy.transition(dissolve)
                                     hide ten3w1
@@ -5455,7 +5455,7 @@ label nrvillage:
                                     hide ten3w3
                                     hide ten3f3
                                     show ten3f4
-                                    p "Use this!"                                    
+                                    p "Use this!"
                                     p "Water style!"
                                     $ renpy.transition(dissolve)
                                     show ten3w1
@@ -5482,8 +5482,8 @@ label nrvillage:
                                     show ten3f3
                                     p "And now..."
                                     jump tentenpussyfucknight
-                                
-                                
+
+
                                 "Cum in":
                                     $ renpy.transition(dissolve)
                                     hide ten3f3
@@ -5502,13 +5502,13 @@ label nrvillage:
                                     p "Yeah sorry."
                                     te "Ok... I just wash myself in waterfall."
                                     p "Good..."
-                                    scene black with circleirisin  
+                                    scene black with circleirisin
                                     "Tenten jump into the water and start cleaning herself."
                                     $ day = day + 1
                                     show drock0 with circleirisout
                                     jump drock
 
-                                    
+
                                 "Cum out":
                                     $ renpy.transition(dissolve)
                                     hide ten3f3
@@ -5530,20 +5530,20 @@ label nrvillage:
                                     te "So much sperm...."
                                     p "Hehe... You need to clean yourself now."
                                     te "Mmm...*moan* Yes..."
-                                    scene black with circleirisin  
+                                    scene black with circleirisin
                                     "Tenten jump into the water and start cleaning herself."
                                     $ day = day + 1
                                     show drock0 with circleirisout
                                     jump drock
-                                    
-                                    
-                            
+
+
+
                     "Fuck her ass":
                         if tenmission <= 5:
-                            "Nothing." 
-                            
-                                                            
-                        else: 
+                            "Nothing."
+
+
+                        else:
                             p "I want to fuck your ass right now!"
                             te "Hehe... I know you want..."
                             p "..."
@@ -5638,10 +5638,10 @@ label nrvillage:
                                     p "I can help you."
                                     te "Yes... I know you can..."
                                     $ day = day + 1
-                                    scene black with circleirisin                   
+                                    scene black with circleirisin
                                     show drock0 with circleirisout
                                     jump drock
-                                    
+
                                 "Cum out":
                                     p "Yeah!!!"
                                     $ renpy.transition(dissolve)
@@ -5664,18 +5664,18 @@ label nrvillage:
                                     te "Do you want to wash my body now?"
                                     p "Sure..."
                                     $ day = day + 1
-                                    scene black with circleirisin                   
+                                    scene black with circleirisin
                                     show drock0 with circleirisout
                                     jump drock
-                    
+
                     "Kage bunshin":
                         if tenmission <= 5:
-                            "Nothing." 
-                            
+                            "Nothing."
+
                         else:
                             p "Do you ever try something crazy?"
                             te "Of course..."
-                            if tenmission == 15: 
+                            if tenmission == 15:
                                 $ tenmission = 16
                             p "*smooch*"
                             $ renpy.transition(dissolve)
@@ -5787,25 +5787,25 @@ label nrvillage:
                             te "I just need a minute or two to recover... My pussy and boobs are trembling..."
                             p "Sure."
                             $ day = day + 1
-                            scene black with circleirisin                   
+                            scene black with circleirisin
                             show drock0 with circleirisout
                             jump drock
-                
+
             else:
                 "You knock on the door, but no one answer."
-                scene black with circleirisin                   
+                scene black with circleirisin
                 show nrock0 with circleirisout
                 jump nrock
-            
-            
+
+
         "Visit Temari":
             "You knock on the door..."
             if temamission <= 6:
                 "But no one answers..."
-                scene black with circleirisin                   
+                scene black with circleirisin
                 show nrock0 with circleirisout
-                jump nrock 
-                
+                jump nrock
+
             elif temamission == 7:
                 $ temamission = 8
                 $ renpy.transition(dissolve)
@@ -5912,10 +5912,10 @@ label nrvillage:
                     "Stay":
                         "You decide to sleep in the Temari house."
                 $ day = day + 1
-                scene black with circleirisin                   
+                scene black with circleirisin
                 show drock0 with circleirisout
-                jump drock   
-                
+                jump drock
+
             else:
                 $ renpy.transition(dissolve)
                 show tema
@@ -6007,9 +6007,9 @@ label nrvillage:
                                 ti "You can sleep here if you want..."
                                 p "Sure..."
                                 $ day = day + 1
-                                scene black with circleirisin                   
+                                scene black with circleirisin
                                 show drock0 with circleirisout
-                                jump drock  
+                                jump drock
                             "Bigger boobs":
                                 p "Your boobs is too small... Make them bigger..."
                                 ti "Ahhh..*moan* But..."
@@ -6074,10 +6074,10 @@ label nrvillage:
                                 ti "You can sleep here if you want..."
                                 p "Sure..."
                                 $ day = day + 1
-                                scene black with circleirisin                   
+                                scene black with circleirisin
                                 show drock0 with circleirisout
-                                jump drock  
-                                
+                                jump drock
+
                             "Huge boobs":
                                 p "I want to see huge boobs..."
                                 ti "MMM...*moan* It will be..."
@@ -6182,10 +6182,10 @@ label nrvillage:
                                 ti "You can sleep here if you want..."
                                 p "Sure..."
                                 $ day = day + 1
-                                scene black with circleirisin                   
+                                scene black with circleirisin
                                 show drock0 with circleirisout
-                                jump drock  
-                        
+                                jump drock
+
                     "Fuck her ass":
                         if temamission <= 9:
                             "Sorry but this is not a good idea..."
@@ -6274,10 +6274,10 @@ label nrvillage:
                             p "Exactly..."
                             ti "We will see how good you will be next time..."
                             $ day = day + 1
-                            scene black with circleirisin                   
+                            scene black with circleirisin
                             show drock0 with circleirisout
-                            jump drock 
-                            
+                            jump drock
+
                         else:
                             p "I want to fuck your ass today."
                             ti "Sure, my ass is ready for it..."
@@ -6359,7 +6359,7 @@ label nrvillage:
                                     p "Exactly..."
                                     ti "We will see how good you will be next time..."
                                     $ day = day + 1
-                                    scene black with circleirisin                   
+                                    scene black with circleirisin
                                     show drock0 with circleirisout
                                     jump drock
                                 "Cancel supresion":
@@ -6421,7 +6421,7 @@ label nrvillage:
                                     p "Hehe... I just like big boobs."
                                     ti "..."
                                     $ day = day + 1
-                                    scene black with circleirisin                   
+                                    scene black with circleirisin
                                     show drock0 with circleirisout
                                     jump drock
                                 "Use tools":
@@ -6475,31 +6475,31 @@ label nrvillage:
                                     ti "What???"
                                     p "You can thank me later."
                                     $ day = day + 1
-                                    scene black with circleirisin                   
+                                    scene black with circleirisin
                                     show drock0 with circleirisout
                                     jump drock
-                
-                
-                scene black with circleirisin                   
+
+
+                scene black with circleirisin
                 show drock0 with circleirisout
-                jump drock     
-                     
-        
+                jump drock
+
+
         "Visit Kaguya":
             "You knock on the door..."
             if kagumission <= 1:
                 "You heard someone behind the door, but no one answers."
-                scene black with circleirisin                   
+                scene black with circleirisin
                 show nrock0 with circleirisout
                 jump nrock
-                
+
             elif kagumission == 2:
                 $ renpy.transition(dissolve)
                 show kagg1
                 show kaggok
                 ka "Hello %(p)s..."
                 p "Hi..."
-                $ kagumission = 3                
+                $ kagumission = 3
                 p "You look so different now."
                 ka "Yes, this is my favorite outfit. I wear it after I return from work."
                 ka "It is much more comfortable than my work outfit."
@@ -6517,7 +6517,7 @@ label nrvillage:
                         hide kaggok
                         show kaggsad
                         ka "Hmpf..."
-                        
+
                 p "Anyway, I just want to check if you are alright, and maybe go out with you and have some fun."
                 $ renpy.transition(dissolve)
                 hide kagghap
@@ -6531,14 +6531,14 @@ label nrvillage:
                 hide kaggshock
                 show kagghap
                 ka "Sure! Let's go!"
-                scene black with circleirisin   
+                scene black with circleirisin
                 "You spend a wonderful night with Kaguya. It looks like she likes you."
                 $ day = day + 1
                 "But you felt really strong aura about her... Be careful, and don't try to piss her out!"
                 show drock0 with circleirisout
-                jump drock 
-                
-                
+                jump drock
+
+
             else:
                 $ renpy.transition(dissolve)
                 show kagg1
@@ -6551,52 +6551,52 @@ label nrvillage:
                             ka "I am fine... Maybe a little lonely."
                             p "I can stay with you if you want..."
                             ka "That would be nice..."
-                            scene black with circleirisin 
-                            "You spend some time with Kaguay. She is not scary as people say." 
+                            scene black with circleirisin
+                            "You spend some time with Kaguay. She is not scary as people say."
                             $ day = day + 1
                             show drock0 with circleirisout
                             jump drock
                         else:
                             p "I just want to know how are you tonight."
                             $ renpy.transition(dissolve)
-                            hide kaggok                            
+                            hide kaggok
                             show kagghap
                             ka "I feel good when you are with me."
                             p "Do you want to talk about something?"
                             ka "Not really, but maybe we can do something funny tonight."
                             p "Huh? Sure..."
                             $ renpy.transition(dissolve)
-                            hide kagghap                          
-                            show kaggok  
+                            hide kagghap
+                            show kaggok
                             jump kagunighttalk
-                            
+
                     "Go out":
                         if kagumission <= 3:
                             p "Do you want to go out with me tonight?"
                             ka "Sure? Where you want to go?"
                             p "To the pub or just hang out in the village."
                             $ renpy.transition(dissolve)
-                            hide kaggok                            
+                            hide kaggok
                             show kagghap
                             ka "That sounds great lets go!"
-                            scene black with circleirisin 
-                            "Kaguya was really nice tonight... You both enjoyed the night together." 
+                            scene black with circleirisin
+                            "Kaguya was really nice tonight... You both enjoyed the night together."
                             $ day = day + 1
                             show drock0 with circleirisout
                             jump drock
-                        elif kagumission == 4: 
+                        elif kagumission == 4:
                             p "Do you want to go out with me tonight?"
                             ka "Sure? Where you want to go?"
                             $ kagumission = 5
                             p "To the pub or just hang out in the village."
                             $ renpy.transition(dissolve)
-                            hide kaggok                            
+                            hide kaggok
                             show kagghap
                             ka "That sounds great lets go!"
-                            scene black with circleirisin               
+                            scene black with circleirisin
                             show rnight with circleirisout
                             $ renpy.transition(dissolve)
-                            hide kagg1                           
+                            hide kagg1
                             hide kagghap
                             show kagg1
                             show kaggok
@@ -6645,7 +6645,7 @@ label nrvillage:
                             ka "No... Maybe a little..."
                             p "*smooch*"
                             $ renpy.transition(dissolve)
-                            hide kagg1                       
+                            hide kagg1
                             hide kaggcl
                             show kagg2
                             show kaggok
@@ -6654,25 +6654,25 @@ label nrvillage:
                             p "Do not be shy, you are beautiful."
                             ka "Thank you..."
                             p "*smooch*"
-                            scene black with circleirisin 
+                            scene black with circleirisin
                             "You spend the night with Kaguya and finally undress her..."
-                            "Now is the time to do some funny stuff..." 
+                            "Now is the time to do some funny stuff..."
                             $ day = day + 1
                             show drock0 with circleirisout
                             jump drock
-                            
+
                         else:
                             p "Do you want to go out with me tonight?"
                             ka "Sure? Where you want to go?"
                             p "To the pub or just hang out in the village."
                             $ renpy.transition(dissolve)
-                            hide kaggok                            
+                            hide kaggok
                             show kagghap
                             ka "That sounds great lets go!"
-                            scene black with circleirisin               
+                            scene black with circleirisin
                             show rnight with circleirisout
                             $ renpy.transition(dissolve)
-                            hide kagg1                           
+                            hide kagg1
                             hide kagghap
                             show kagg1
                             show kaggok
@@ -6696,7 +6696,7 @@ label nrvillage:
                                         show kaggcl
                                         p "*smooch*"
                                         $ renpy.transition(dissolve)
-                                        hide kagg1                          
+                                        hide kagg1
                                         hide kaggcl
                                         show kagg2
                                         show kaggok
@@ -6704,13 +6704,13 @@ label nrvillage:
                                         ka "Yesss...."
                                         p "*smooch*"
                                         "You slowly start to kissing Kaguya body."
-                                        scene black with circleirisin 
+                                        scene black with circleirisin
                                         "You spend the night with Kaguya..."
-                                        "But you should really try to do something different." 
+                                        "But you should really try to do something different."
                                         $ day = day + 1
                                         show drock0 with circleirisout
                                         jump drock
-                                        
+
                                     else:
                                         p "I think you know what I want..."
                                         $ renpy.transition(dissolve)
@@ -6728,7 +6728,7 @@ label nrvillage:
                                         show kaggcl
                                         p "*smooch*"
                                         $ renpy.transition(dissolve)
-                                        hide kagg1                        
+                                        hide kagg1
                                         hide kaggcl
                                         show kagg2
                                         show kaggok
@@ -6760,26 +6760,26 @@ label nrvillage:
                                         show kaggm1
                                         ka "This is so good... *heavy moaning* Come her *smooch*"
                                         p "*smooch*"
-                                        scene black with circleirisin 
+                                        scene black with circleirisin
                                         "Yeah, that was fun. Kaguya is really beautiful chick."
                                         $ day = day + 1
                                         show drock0 with circleirisout
                                         jump drock
-                                        
+
                                 "Titfuck":
-                                    if kagumission <= 5: 
+                                    if kagumission <= 5:
                                         "This is not a good idea..."
                                         "Try to build some relationship with her first."
                                         jump kagufucknight12
-                                        
-                                    elif kagumission == 6: 
+
+                                    elif kagumission == 6:
                                         p "Do you want to have some fun?"
                                         ka "What you mean by that?"
                                         p "I will show you just take off your top..."
                                         ka "Huh???"
                                         $ kagumission = 7
                                         $ renpy.transition(dissolve)
-                                        hide kagg1                        
+                                        hide kagg1
                                         hide kaggok
                                         ka "Wait... What are you???"
                                         ka "Mghmmm????"
@@ -6851,7 +6851,7 @@ label nrvillage:
                                         hide kag2p2
                                         p "Are you allright?"
                                         $ renpy.transition(dissolve)
-                                        show kagg1                        
+                                        show kagg1
                                         show kaggok
                                         show kaggsp1
                                         ka "MMm.... Yes... I feel great... *glog*"
@@ -6861,7 +6861,7 @@ label nrvillage:
                                         ka "That was my first titfuck."
                                         p "Really? And do you enjoy it?"
                                         $ renpy.transition(dissolve)
-                                        hide kaggok                      
+                                        hide kaggok
                                         show kaggorg
                                         hide kaggsp1
                                         show kaggsp1
@@ -6874,17 +6874,17 @@ label nrvillage:
                                         p "I am really tired..."
                                         ka "Do you want to sleep here?"
                                         p "Yeah... Sure, why not...."
-                                        scene black with circleirisin 
+                                        scene black with circleirisin
                                         $ day = day + 1
                                         show drock0 with circleirisout
                                         jump drock
-                                    else: 
+                                    else:
                                         p "Do you want to have some fun?"
                                         ka "What you mean by that?"
                                         p "I will show you just take off your top..."
                                         ka "Yaiks, you want to play with my tits right?"
                                         $ renpy.transition(dissolve)
-                                        hide kagg1                        
+                                        hide kagg1
                                         hide kaggok
                                         p "Hehe..."
                                         ka "Mghmmm...*moan*"
@@ -6956,7 +6956,7 @@ label nrvillage:
                                         hide kag2p2
                                         p "Are you allright?"
                                         $ renpy.transition(dissolve)
-                                        show kagg1                        
+                                        show kagg1
                                         show kaggok
                                         show kaggsp1
                                         ka "MMm.... Yes... I feel great... *glog*"
@@ -6966,7 +6966,7 @@ label nrvillage:
                                         ka "Every titfuck is better than the one before."
                                         p "Yeah, I feel same."
                                         $ renpy.transition(dissolve)
-                                        hide kaggok                      
+                                        hide kaggok
                                         show kaggorg
                                         hide kaggsp1
                                         show kaggsp1
@@ -6979,18 +6979,18 @@ label nrvillage:
                                         ka "It is time to go to the bed."
                                         ka "You can stay here if you want."
                                         p "Sure...."
-                                        scene black with circleirisin 
+                                        scene black with circleirisin
                                         $ day = day + 1
                                         show drock0 with circleirisout
                                         jump drock
-                                    
+
                                 "Fuck her":
-                                    if kagumission <= 7: 
+                                    if kagumission <= 7:
                                         "This is not a good idea..."
                                         "Try to build some relationship with her first."
                                         jump kagufucknight12
-                                        
-                                    elif kagumission == 8: 
+
+                                    elif kagumission == 8:
                                         p "I was thinking about what you said last time."
                                         ka "???"
                                         $ kagumission = 9
@@ -7003,7 +7003,7 @@ label nrvillage:
                                         p "What?"
                                         ka "I will tell it to you, but you need to deserve it. Show me what you have!"
                                         $ renpy.transition(dissolve)
-                                        hide kagg1                        
+                                        hide kagg1
                                         hide kaggsad
                                         p "If that is what you really want..."
                                         $ renpy.transition(dissolve)
@@ -7153,7 +7153,7 @@ label nrvillage:
                                         hide kag1a
                                         p "..."
                                         $ renpy.transition(dissolve)
-                                        show kagg2                        
+                                        show kagg2
                                         show kaggsad
                                         show kaggsp1
                                         show kaggsp2
@@ -7165,7 +7165,7 @@ label nrvillage:
                                         ka "Sure... Ehm... Where I ended last time?"
                                         p "You told me something about using our powers to make girls more helpful."
                                         $ renpy.transition(dissolve)
-                                        hide kaggsad                      
+                                        hide kaggsad
                                         show kaggok
                                         ka "Yes. I remember..."
                                         ka "Your power can affect mind space and time."
@@ -7177,14 +7177,14 @@ label nrvillage:
                                         ka "I enjoyed it too... Anyway.... It is hard to persuade them right?"
                                         p "Sometimes..."
                                         $ renpy.transition(dissolve)
-                                        hide kaggok                      
+                                        hide kaggok
                                         show kaggcl
                                         ka "But what if you use your Namigan to make it easier?"
                                         p "Huh? Really? I never think about my powers in that way!"
                                         ka "But you can use them to change or erase memories... Maybe completely delete the personality."
                                         p "Continue..."
                                         $ renpy.transition(dissolve)
-                                        hide kaggcl                      
+                                        hide kaggcl
                                         show kaggok
                                         ka "Maybe if I help you we can capture some girls and make them have sex with us!"
                                         p "Huh... That sounds good... But where you want to do that? It is dangerous to do it in the big village there are many guards and sensory chakra type guys."
@@ -7194,27 +7194,27 @@ label nrvillage:
                                         ka "I know one place in the forest between the villages. I have already built something there with my chakra."
                                         p "So you are telling me that we should live together in the other village with other women?"
                                         $ renpy.transition(dissolve)
-                                        hide kaggok                      
+                                        hide kaggok
                                         show kagghap
                                         ka "If you want it...."
                                         p "It actually sounds pretty cool... My own harem village..."
                                         ka "It is only an option for now... But I think it will be fun to fuck with more women..."
                                         p "Yeah... You are right... Where you want to start it?"
                                         ka "It is all about you... Right now I need some rest you destroyed all my holes... *chuckles*"
-                                        p "Sure... See you later..."                                        
-                                        scene black with circleirisin 
+                                        p "Sure... See you later..."
+                                        scene black with circleirisin
                                         $ day = day + 1
                                         show drock0 with circleirisout
                                         jump drock
-                                        
-                                    else: 
+
+                                    else:
                                         p "I want to use my kage bunshin tonight."
                                         hide kaggok
                                         show kagghap
                                         ka "That is amazing idea..."
                                         p "Are you ready for it?"
                                         $ renpy.transition(dissolve)
-                                        hide kagg1                        
+                                        hide kagg1
                                         hide kagghap
                                         ka "Give me a moment."
                                         $ renpy.transition(dissolve)
@@ -7364,7 +7364,7 @@ label nrvillage:
                                         hide kag1a
                                         p "..."
                                         $ renpy.transition(dissolve)
-                                        show kagg2                        
+                                        show kagg2
                                         show kaggsad
                                         show kaggsp1
                                         show kaggsp2
@@ -7373,20 +7373,20 @@ label nrvillage:
                                         p "Good to hear it..."
                                         ka "My legs are trembling now."
                                         $ renpy.transition(dissolve)
-                                        hide kaggsad                      
+                                        hide kaggsad
                                         show kaggok
                                         ka "I think I need some rest now..."
                                         ka "You can sleep with me tonight if you want...."
                                         p "Sure... Just wash yourself first..."
                                         ka "Maybe we can wash together."
                                         p "That sound good too..."
-                                        ka "Ok, come with me..."                                                                               
-                                        scene black with circleirisin 
+                                        ka "Ok, come with me..."
+                                        scene black with circleirisin
                                         $ day = day + 1
                                         show drock0 with circleirisout
                                         jump drock
-                            
-                        
+
+
                     "Namigan":
                         if missionsa == 0:
                             "You don't know how to use Namigan."
@@ -7417,7 +7417,7 @@ label nrvillage:
                                     rotate 0
                                     linear 5 rotate 360
                                     repeat
-                            n "The Little advice mind break will not work on Kaguya." 
+                            n "The Little advice mind break will not work on Kaguya."
                             p "What? Why?"
                             n "Her kekkei genkai will not allow you to use it."
                             p "Fuck..."
@@ -7426,7 +7426,7 @@ label nrvillage:
                             $ renpy.transition(dissolve)
                             hide nc
                             jump kagunighttalk
-                            
+
                         elif missionsa >=2:
                             p "I want to test something..."
                             ka "What?"
@@ -7435,7 +7435,7 @@ label nrvillage:
                             ka "Ok..."
                             p "NAMIGAN!!! Time stop!" with hpunch
                             ka "..."
-                            p "Do you feel something?"     
+                            p "Do you feel something?"
                             ka "...."
                             p "It really works..."
                             p "So now is time to..."
@@ -7444,7 +7444,7 @@ label nrvillage:
                                     $ renpy.transition(dissolve)
                                     p "Time to fuck you... But you need to get into the right position first..."
                                     $ renpy.transition(dissolve)
-                                    hide kagg1                            
+                                    hide kagg1
                                     hide kaggok
                                     p "..."
                                     $ renpy.transition(dissolve)
@@ -7603,21 +7603,21 @@ label nrvillage:
                                     p "You are finally covered with sperm."
                                     ka "*moan cough*"
                                     p "Yeah,  I know... Time to clean you...."
-                                    scene black with circleirisin      
+                                    scene black with circleirisin
                                     "You clean Kaguya and cancel the Namigan... She was probably not know what happened to her."
                                     $ day = day + 1
                                     show drock0 with circleirisout
                                     jump drock
-                                    
+
                                 "Boob expansion":
                                     if expscroll ==0:
                                         p "I need expansion scroll for that."
                                         jump kagunamifuck
-                                    else:        
+                                    else:
                                         $ renpy.transition(dissolve)
                                         p "I want to see really big boobs..."
                                         $ renpy.transition(dissolve)
-                                        hide kagg1                            
+                                        hide kagg1
                                         hide kaggok
                                         p "First I need to take off your clothes and then..."
                                         $ renpy.transition(dissolve)
@@ -7642,7 +7642,7 @@ label nrvillage:
                                                 show kag1op
                                                 ka "Ahhh...*moan*"
                                                 p "This is even better! Time to fuck you!"
-                                                
+
                                             "No":
                                                 p "Mehh... I just fuck her..."
                                         $ renpy.transition(dissolve)
@@ -7809,7 +7809,7 @@ label nrvillage:
                                         hide kag1c
                                         p "Expansion KAI!"
                                         $ renpy.transition(dissolve)
-                                        show kagg2                        
+                                        show kagg2
                                         show kaggsad
                                         show kaggsp1
                                         show kaggsp2
@@ -7828,7 +7828,7 @@ label nrvillage:
                                         show kaggsad
                                         p "NAMIGAN KAI!!!"
                                         $ renpy.transition(dissolve)
-                                        hide kaggsad                      
+                                        hide kaggsad
                                         show kaggok
                                         ka "..."
                                         p "Are you with me?"
@@ -7837,19 +7837,19 @@ label nrvillage:
                                         ka "Hmmm so that feelings... That pressure and taste..."
                                         p "Ehm.... Side effects???"
                                         $ renpy.transition(dissolve)
-                                        hide kaggok                      
+                                        hide kaggok
                                         show kagghap
-                                        ka "Sure Side effects... I hope you enjoyed them." 
+                                        ka "Sure Side effects... I hope you enjoyed them."
                                         p "Yeah...."
                                         ka "Next time we can try that side effects without using Namigan."
                                         p "Ehm.... I need to go home.... Bye..."
                                         ka "Bye..."
-                                        scene black with circleirisin   
+                                        scene black with circleirisin
                                         p "That was close, I think she knows something."
                                         $ day = day + 1
                                         show drock0 with circleirisout
                                         jump drock
-                                        
+
                                 "Something special":
                                     if kagumission <= 8:
                                         "I seriously have no clue what you want to do with this option."
@@ -7859,19 +7859,18 @@ label nrvillage:
                                         "This option will help you create your own harem."
                                         "It will be in the next version."
                                         jump kagunamifuck
-                        
-                        
+
+
                     "Nothing":
-                        scene black with circleirisin               
+                        scene black with circleirisin
                         show nrock0 with circleirisout
-                        jump nrock 
-                        
-            scene black with circleirisin                   
+                        jump nrock
+
+            scene black with circleirisin
             show drock0 with circleirisout
-            jump drock   
-        
+            jump drock
+
         "Go to map":
-            scene black with circleirisin               
+            scene black with circleirisin
             show nrock0 with circleirisout
-            jump nrock               
-    
+            jump nrock

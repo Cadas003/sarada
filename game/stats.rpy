@@ -10,11 +10,11 @@ label ik111:
         else:
             image "kha2.png"
 
-        text "Name: Hanabi":
+        text "Name: Ханаби":
             xpos 130 ypos 120
             size 30 color "#000000" italic False bold False
 
-        text "Status: Excited":
+        text "Status: В восторге":
             xpos 130 ypos 220
             size 30 color "#000000" italic False bold False
 
@@ -35,9 +35,9 @@ label ik111:
                                            ])
 
 
-    if select == "mission":
-        "It is really easy to complete Hanabi missions."
-        "Just try to find her in the Hyuga house during night..."
+    if select == "Миссии":
+        "Действительно легко завершить миссии Ханаби."
+        "Попробуйте найти ее в доме Хьюга ночью..."
         "Отправляйся на свидание с ней и будь мил, она легко влюбится в тебя."
         $ renpy.transition(dissolve)
         jump ik111

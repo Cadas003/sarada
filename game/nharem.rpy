@@ -169,7 +169,7 @@ label nharem:
 
 label nharemshrine1:
     menu:
-        "Look around":
+        "Осмотреться":
             "You feel a weird chakra from this shrine..."
             "You have no clues what kind of chakra it is..."
             scene black with circleirisin
