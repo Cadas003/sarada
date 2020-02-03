@@ -11,21 +11,21 @@ label dharem:
                                                (990, 330, 1255, 435, "house"),
                                                (910, 115, 1190, 220, "cave"),
                                                (1320, 200, 1650, 320, "forest"),
-                                               ]) 
+                                               ])
     if select == "gate":
-        scene black with circleirisin       
+        scene black with circleirisin
         show dharemgate with circleirisout
         menu:
-            "Talk with Mikoto":
+            "Поговорить с Микото":
                 $ renpy.transition(dissolve)
-                show mikoa 
+                show mikoa
                 show mikoop
-                mik "Good to see you again. How can I help?"
+                mik "Рад снова тебя видеть. Чем могу помочь?"
                 menu mikototalk:
                     "Talk":
                         if extra1 ==0:
-                            p "Can you tell me something about yourself?"
-                            mik "Ehm... And what do you want to know?"
+                            p "Можешь рассказать мне что-нибудь о себе?"
+                            mik "Эмм... И что ты хочешь знать?"
                             $ extra1 = 1
                             p "Maybe something about that weird eye you have before."
                             $ renpy.transition(dissolve)
@@ -50,10 +50,10 @@ label dharem:
                             mik "But not now... I have some work to do..."
                             p "Sure... Ehmmm... Maybe tomorrow?"
                             mik "Maybe...."
-                            scene black with circleirisin               
+                            scene black with circleirisin
                             show nharem0 with circleirisout
                             jump nharem
-                            
+
                         else:
                             p "Can you tell me something about yourself?"
                             mik "Ehm... And what do you want to know?"
@@ -61,9 +61,9 @@ label dharem:
                             mik "Sure... Anything else?"
                             p "..."
                             jump mikototalk
-                            
-                        
-                        
+
+
+
                     "About village":
                         if extra1 ==1:
                             p "I just wonder if is anything I should know about the village."
@@ -88,10 +88,10 @@ label dharem:
                             show mikook
                             mik "Any other questions?"
                             p "Not right now..."
-                            scene black with circleirisin               
+                            scene black with circleirisin
                             show nharem0 with circleirisout
-                            jump nharem 
-                            
+                            jump nharem
+
                         else:
                             p "Is there anything I should know about the village?"
                             mik "Just do not try to harm anyone and you will be fine."
@@ -100,33 +100,33 @@ label dharem:
                             mik "Do you have other questions?"
                             p "Maybe..."
                             jump mikototalk
-                        
+
                     "Exclusive private service":
                         p "So can you show me the village?"
                         if extra1 <=1:
                             mik "Sorry, But I do not have a time right now maybe later."
                             p "Ok...."
-                            scene black with circleirisin               
+                            scene black with circleirisin
                             show dharem0 with circleirisout
                             jump dharem
                         else:
                             mik "Sure where you want to go?"
                             menu:
-                                
+
                                 "Village":
                                     p "Can you show me something interesting in the village?"
                                     mik "Sure, just follow me."
-                                    scene black with circleirisin 
+                                    scene black with circleirisin
                                     show dhremvillage with circleirisout
                                     $ renpy.transition(dissolve)
-                                    hide mikoa 
+                                    hide mikoa
                                     hide mikoop
-                                    show mikoa 
+                                    show mikoa
                                     show mikook
                                     p "Hmmm... Nice... And what is interesting here?"
                                     mik "Just wait for a moment..."
                                     $ renpy.transition(dissolve)
-                                    hide mikoa 
+                                    hide mikoa
                                     hide mikook
                                     show mik2a
                                     show mik2ok
@@ -171,11 +171,11 @@ label dharem:
                                             show mik2op
                                             p "Yeah... It was...."
                                             mik "Next time I will play with you."
-                                            p "Ok... I am looking forward for it."                                            
-                                            scene black with circleirisin       
+                                            p "Ok... I am looking forward for it."
+                                            scene black with circleirisin
                                             show nharem0 with circleirisout
                                             jump nharem
-                                            
+
                                         "Fuck hre boobs":
                                             p "Expansion!!!"
                                             $ renpy.transition(dissolve)
@@ -231,25 +231,25 @@ label dharem:
                                             mik "Thanks."
                                             mik "Come to see me again if you want some fun..."
                                             p "Sure..."
-                                            scene black with circleirisin       
+                                            scene black with circleirisin
                                             show nharem0 with circleirisout
                                             jump nharem
-                                    
-                                
+
+
                                 "SPA":
                                     p "I want to check the spa."
                                     mik "Allright..."
-                                    scene black with circleirisin 
+                                    scene black with circleirisin
                                     show dharemspa with circleirisout
                                     $ renpy.transition(dissolve)
-                                    hide mikoa 
+                                    hide mikoa
                                     hide mikoop
-                                    show mikoa 
+                                    show mikoa
                                     show mikook
                                     p "This place look nice..."
                                     mik "Yes..."
                                     $ renpy.transition(dissolve)
-                                    hide mikoa 
+                                    hide mikoa
                                     hide mikook
                                     show mikob
                                     show mikook
@@ -350,27 +350,27 @@ label dharem:
                                     mik "MMMm....*heavy moaning* So much sperm..."
                                     p "Yeah... I think now you really need a bath...."
                                     mik "Yes...*gigle*"
-                                    scene black with circleirisin       
+                                    scene black with circleirisin
                                     "It looks like Mikoto is a really horny woman... That relationship can work."
                                     show nharem0 with circleirisout
                                     jump nharem
-                                
+
                                 "Cave":
                                     p "Is there anything what I can check near the village?."
                                     mik "Huh? Only forest. Or one old cave."
                                     p "Old cave? That sounds good to me, lets go."
-                                    scene black with circleirisin 
+                                    scene black with circleirisin
                                     show dharemcave with circleirisout
                                     $ renpy.transition(dissolve)
-                                    hide mikoa 
+                                    hide mikoa
                                     hide mikoop
-                                    show mikoa 
+                                    show mikoa
                                     show mikook
                                     p ".... Normal cave..."
                                     mik "I told you.... But no one is around."
                                     p "So we can do something together right?"
                                     $ renpy.transition(dissolve)
-                                    hide mikoa 
+                                    hide mikoa
                                     hide mikook
                                     mik "And what do you want to do?"
                                     p "I will show you.... Just lay down and...."
@@ -461,13 +461,13 @@ label dharem:
                                             p "Yeah.... It is..."
                                             mik "I wonder if you can fill me right now every day."
                                             p "We should definitely try it..."
-                                            scene black with circleirisin       
+                                            scene black with circleirisin
                                             show nharem0 with circleirisout
                                             jump nharem
-                                            
-                                            
+
+
                                         "Cum out":
-                                            
+
                                             $ renpy.transition(dissolve)
                                             hide miko4p3
                                             show miko4p2
@@ -485,27 +485,27 @@ label dharem:
                                             p "Look at you...."
                                             mik "I am hot right?"
                                             p "Yes you are...."
-                                            scene black with circleirisin       
+                                            scene black with circleirisin
                                             show nharem0 with circleirisout
                                             jump nharem
-                                    
-                                    
+
+
                                 "Forset":
                                     p "I need to breathe some fresh air."
                                     mik "Alright, we can go to the forest..."
                                     p "Sounds good to me."
-                                    scene black with circleirisin 
+                                    scene black with circleirisin
                                     show dharemforest with circleirisout
                                     $ renpy.transition(dissolve)
-                                    hide mikoa 
+                                    hide mikoa
                                     hide mikoop
-                                    show mikoa 
+                                    show mikoa
                                     show mikook
                                     p "Ahhh... This is what I needed!"
                                     mik "Is there anything what I can do for you to make you feel better?"
                                     p "Actually, I know about something... Just take these clothes off..."
                                     $ renpy.transition(dissolve)
-                                    hide mikoa 
+                                    hide mikoa
                                     hide mikook
                                     show mikob
                                     show mikook
@@ -602,83 +602,83 @@ label dharem:
                                     p "Yeah... I think so... Fresh air is the best..."
                                     p "Thanks for.... Am.... Everything..."
                                     mik "Hehe... You are welcome."
-                                    scene black with circleirisin       
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
                                     jump nharem
-                                
-                                
-                                
+
+
+
                     "Nothing":
-                        scene black with circleirisin               
+                        scene black with circleirisin
                         show dharem0 with circleirisout
-                        jump dharem 
-                        
-                        
-                scene black with circleirisin               
+                        jump dharem
+
+
+                scene black with circleirisin
                 show drock0 with circleirisout
-                jump drock 
-                
+                jump drock
+
                 show dharemspa with circleirisout
-                
-            
+
+
             "Return to Konoha":
                 "You leave the village."
-                scene black with circleirisin   
+                scene black with circleirisin
                 "After a day of traveling you come to the Konoha."
                 $ day = day + 1
                 show droom with circleirisout
                 jump nday
-                
+
             "Go to hidden stone village":
-                scene black with circleirisin               
+                scene black with circleirisin
                 show drock0 with circleirisout
-                jump drock  
-                
+                jump drock
+
             "Assign":
                 "There is nothing to do right now."
                 jump dharem
-                
+
             "Rest":
                 "You need to get some rest."
-                scene black with circleirisin               
+                scene black with circleirisin
                 show nharem0 with circleirisout
                 jump nharem
-            
+
             "Go back to the map":
-                scene black with circleirisin               
+                scene black with circleirisin
                 show dharem0 with circleirisout
-                jump dharem  
-        
+                jump dharem
+
     if select == "spa":
-        scene black with circleirisin  
-        show dharemspa with circleirisout     
+        scene black with circleirisin
+        show dharemspa with circleirisout
         jump dharemspa1
-        
-        
-        
+
+
+
     if select == "village":
-        scene black with circleirisin  
-        show dhremvillage with circleirisout        
-        jump dhremvillage1           
-            
-        
-    if select == "house":      
-                    
-        scene black with circleirisin  
+        scene black with circleirisin
+        show dhremvillage with circleirisout
+        jump dhremvillage1
+
+
+    if select == "house":
+
+        scene black with circleirisin
         show dharemhouse with circleirisout
         jump dharemhouse1
-        
-        
-        
+
+
+
     if select == "cave":
-        scene black with circleirisin  
+        scene black with circleirisin
         show dharemcave with circleirisout
         jump dharemcave1
-        
-        
-        
-    if select == "forest": 
-        scene black with circleirisin  
+
+
+
+    if select == "forest":
+        scene black with circleirisin
         show dharemforest with circleirisout
         jump dharemforest1
 
@@ -694,10 +694,10 @@ label dharem:
 
 
 
-################################ dhraemspa1 
 ################################ dhraemspa1
 ################################ dhraemspa1
-################################ dhraemspa1 
+################################ dhraemspa1
+################################ dhraemspa1
 ################################ dhraemspa1
 label dharemspa1:
     scene dharemspa
@@ -706,10 +706,10 @@ label dharemspa1:
             "You decided to take some time and rest."
             "After a few hours you feel much better and your chakra is now refilled."
             $ chakra = chakra + 1
-            scene black with circleirisin               
+            scene black with circleirisin
             show nharem0 with circleirisout
-            jump nharem      
-        
+            jump nharem
+
         "Call Kushina": ### 9 max Kushina
             if kushinamission >= 10:
                     $ renpy.transition(dissolve)
@@ -814,7 +814,7 @@ label dharemspa1:
                                     show kus3nop
                                     p "Time to..."
                                     jump nkuntf1
-                                    
+
                                 "Slap":
                                     p "Do you like this??? *slap*"
                                     $ renpy.transition(dissolve)
@@ -871,7 +871,7 @@ label dharemspa1:
                                     show kus3tf3
                                     p "And now..."
                                     jump nkuntf1
-                                    
+
                                 "Cum":
                                     p "Time to finish it!"
                                     $ renpy.transition(dissolve)
@@ -908,13 +908,13 @@ label dharemspa1:
                                     p "That was good...."
                                     ku "Mmmmm...."
                                     p "Time to clean all this mess..."
-                                    scene black with circleirisin   
+                                    scene black with circleirisin
                                     "Kushina clean her body and drink all sperm."
                                     "It is good to have her in your harem."
-                                    scene black with circleirisin               
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
                                     jump nharem
-                            
+
                         "Kage bunshin":
                             p "I just want to fuck you hard..."
                             p "Strip and get on all four."
@@ -990,20 +990,20 @@ label dharemspa1:
                             ku "Mmmm....*moan*"
                             p "You look so dirty now.... Come on, no time to rest... Clean yourself."
                             ku "....."
-                            scene black with circleirisin        
+                            scene black with circleirisin
                             "That was good... But your Kage bunshin take too much of your chakra."
                             "But looks like Kushina enjoyed it too..."
-                            scene black with circleirisin               
+                            scene black with circleirisin
                             show nharem0 with circleirisout
                             jump nharem
-                        
+
                         "Mixed training":
                             if expscroll ==0:
                                 p "I need an expansion scroll for this."
                                 p "I should visit the shop in the Konoha."
                                 jump nkushinamigan1
-                                
-                                
+
+
                             else:
                                 p "I just want to fuck you hard..."
                                 p "Strip and get on all four."
@@ -1112,17 +1112,17 @@ label dharemspa1:
                                 p "Hey? Are you still here?"
                                 ku "...."
                                 p "Looks like everything is fine.."
-                                scene black with circleirisin               
+                                scene black with circleirisin
                                 show nharem0 with circleirisout
                                 jump nharem
-                        
+
                         "Boob expansion":
                             if expscroll ==0:
                                 p "I need an expansion scroll for this."
                                 p "I should visit the shop in the Konoha."
                                 jump nkushinamigan1
-                                
-                                
+
+
                             else:
                                 p "Time to see how big they can be."
                                 p "First, get into the position."
@@ -1246,24 +1246,24 @@ label dharemspa1:
                                         p "You look really dirty..."
                                         ku "...."
                                         p "Who cares right?"
-                                        
-                                scene black with circleirisin               
+
+                                scene black with circleirisin
                                 show nharem0 with circleirisout
                                 jump nharem
             else:
                 "How you want to talk with her if she is not here?"
-                scene black with circleirisin               
+                scene black with circleirisin
                 show dharem0 with circleirisout
                 jump dharem
-                
+
 
 ####################################### 14 je max pre Chocho
 ####################################### 14 je max pre Chocho
 ####################################### 14 je max pre Chocho
-        
-        
+
+
         "Call Chocho":
-            
+
             if chochostats >=15:
                 $ renpy.transition(dissolve)
                 show chocho1
@@ -1271,7 +1271,7 @@ label dharemspa1:
                 ch "...."
                 p "Now we can enjoy some fun together."
                 menu chochocroom11:
-                    "Basic training": 
+                    "Basic training":
                             p "Now undress!"
                             ch "With pleasure."
                             $ renpy.transition(dissolve)
@@ -1281,7 +1281,7 @@ label dharemspa1:
                             show chocho5
                             show chochonna
                             show chochoc
-                            show chochoshy                        
+                            show chochoshy
                             p "Good."
                             p "Now I want to..."
                             menu:
@@ -1351,13 +1351,13 @@ label dharemspa1:
                                     show chocho1
                                     show chochonna
                                     show chochoc
-                                    show chochoshy 
+                                    show chochoshy
                                     p "Ok..."
-                                    p "See you next time..."                                    
-                                    scene black with circleirisin               
+                                    p "See you next time..."
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
                                     jump nharem
-                                    
+
                                 "Use toys":
                                     p "Ok, first I need to pick that chakra clip."
                                     ch "I am ready for it."
@@ -1382,7 +1382,7 @@ label dharemspa1:
                                     ch "Mmmmmm...."
                                     $ renpy.transition(dissolve)
                                     hide chochocl
-                                    show chochoorg    
+                                    show chochoorg
                                     ch "YES!!!!"
                                     p "Hmm... What if I charge you a little?"
                                     p "Lightning style!!!"
@@ -1393,7 +1393,7 @@ label dharemspa1:
                                     p "More power!!!"
                                     $ renpy.transition(dissolve)
                                     show chocholight
-                                    hide chochoorg 
+                                    hide chochoorg
                                     show chochocl
                                     ch "AAAAAAAAaaaaa..."
                                     p "This is pretty hard to do manually."
@@ -1432,13 +1432,13 @@ label dharemspa1:
                                     show chochosadna
                                     show chochoc
                                     ch "....."
-                                    p "See you next time..."                                    
-                                    scene black with circleirisin               
+                                    p "See you next time..."
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
                                     jump nharem
-                                
+
                                 "Expansion":
-                                        p "Time to try change your body size."                                       
+                                        p "Time to try change your body size."
                                         ch "My body can change size easily."
                                         p "Yes, I know. But now I need to change it."
                                         $ renpy.transition(dissolve)
@@ -1517,7 +1517,7 @@ label dharemspa1:
                                                 show chochoorg
                                                 p "Good..."
                                             "That is enough":
-                                                p "I think this is enough."                                    
+                                                p "I think this is enough."
                                         p "Time to make you normal."
                                         p "Expansion Kai!"
                                         $ renpy.transition(dissolve)
@@ -1539,15 +1539,15 @@ label dharemspa1:
                                         show chochosadna
                                         show chochoc
                                         ch "..."
-                                        p "This is not funny...."                                    
-                                        scene black with circleirisin               
+                                        p "This is not funny...."
+                                        scene black with circleirisin
                                         show nharem0 with circleirisout
                                         jump nharem
-                                        
-                                   
-                                    
-                            
-                    "Let her blow":                        
+
+
+
+
+                    "Let her blow":
                             p "I want to use your mouth today."
                             p "You can undress yourself."
                             ch "If you want it."
@@ -1557,13 +1557,13 @@ label dharemspa1:
                             hide chochoshy
                             show chocho5
                             show chochonna
-                            show chochoc                                       
+                            show chochoc
                             p "Good."
                             p "The last blowjob was very good."
                             p "I really want to see if you can make it better."
                             ch "Blowjob?"
                             $ renpy.transition(dissolve)
-                            show chochoshy 
+                            show chochoshy
                             p "Yes..."
                             ch "Mmmm...Blowjob...."
                             $ renpy.transition(dissolve)
@@ -1585,14 +1585,14 @@ label dharemspa1:
                             hide ch2b
                             hide ch2bn
                             show ch2a
-                            show ch2an                
+                            show ch2an
                             p "You really need something in your mouth."
                             ch "Mgmhgdddfssa...."
                             $ renpy.transition(dissolve)
                             hide ch2a
                             hide ch2an
                             show ch2b
-                            show ch2bn                
+                            show ch2bn
                             ch "GGgrggggfghhh..."
                             p "Like reverse facefuck."
                             $ renpy.transition(dissolve)
@@ -1606,7 +1606,7 @@ label dharemspa1:
                             show ch2a
                             show ch2acl
                             ch "Mgmmmfhddd???"
-                            p "Newermind."                
+                            p "Newermind."
                             $ renpy.transition(dissolve)
                             hide ch2a
                             hide ch2acl
@@ -1726,7 +1726,7 @@ label dharemspa1:
                             p "Incoming!"
                             $ renpy.transition(dissolve)
                             show ch2sp3
-                            ch "MMGMGMMGMFMMGMFMG...."                
+                            ch "MMGMGMMGMFMMGMFMG...."
                             $ renpy.transition(dissolve)
                             hide ch2bdow
                             show ch2bcl
@@ -1754,10 +1754,10 @@ label dharemspa1:
                             show chochoc
                             p "That was a relly good blowjob... I will come back later..."
                             ch "Good..."
-                            scene black with circleirisin               
+                            scene black with circleirisin
                             show nharem0 with circleirisout
                             jump nharem
-                            
+
                     "From behind":
                             p "I want to fuck you from behind."
                             p "Just undress Chocho."
@@ -1767,7 +1767,7 @@ label dharemspa1:
                             hide chochoshy
                             show chocho5
                             show chochonna
-                            show chochoc   
+                            show chochoc
                             ch "..."
                             p "Come on, Show me your ass!"
                             ch "If you really want it..."
@@ -1783,7 +1783,7 @@ label dharemspa1:
                             ch "Sure...."
                             $ renpy.transition(dissolve)
                             show ch3p1
-                            p "It is good to have your approval."                
+                            p "It is good to have your approval."
                             $ renpy.transition(dissolve)
                             hide ch3p1
                             show ch3wet
@@ -2033,11 +2033,11 @@ label dharemspa1:
                                     $ renpy.transition(dissolve)
                                     hide ch3p2
                                     show ch3p3
-                                    p "Just a moment...."                        
+                                    p "Just a moment...."
                                     $ renpy.transition(dissolve)
                                     hide ch3p3
                                     show ch3text
-                                    show ch3p3                        
+                                    show ch3p3
                                     p "There it is...."
                                     ch "...."
                                     $ renpy.transition(dissolve)
@@ -2069,7 +2069,7 @@ label dharemspa1:
                                     show ch3p3
                                     p "Fuckkkkkk....."
                                     jump chochocumfbh
-                            menu chochocumfbh: 
+                            menu chochocumfbh:
                                 "Cum in":
                                     $ renpy.transition(dissolve)
                                     hide ch3p3
@@ -2081,7 +2081,7 @@ label dharemspa1:
                                     $ renpy.transition(dissolve)
                                     hide ch3cl
                                     show ch3up
-                                    p "YEAH!"                        
+                                    p "YEAH!"
                                     $ renpy.transition(dissolve)
                                     show ch3spin2
                                     ch "Aaaaaa....."
@@ -2089,7 +2089,7 @@ label dharemspa1:
                                     with fade
                                     p "Coco, your pussy is amazing."
                                     ch "Thanks."
-                                
+
                                 "Cum out":
                                     $ renpy.transition(dissolve)
                                     hide ch3p3
@@ -2105,7 +2105,7 @@ label dharemspa1:
                                     $ renpy.transition(dissolve)
                                     hide ch3cl
                                     show ch3up
-                                    p "Fuck!"                        
+                                    p "Fuck!"
                                     $ renpy.transition(dissolve)
                                     show ch3spout2
                                     ch "Aaaaaa....."
@@ -2117,11 +2117,11 @@ label dharemspa1:
                             p "You look like a little piggy."
                             ch "....."
                             p "Or stay like this if you want..."
-                            scene black with circleirisin               
+                            scene black with circleirisin
                             show nharem0 with circleirisout
                             jump nharem
-                        
-                    "She's a Lady":                           
+
+                    "She's a Lady":
                             p "Chocho, you are so beautiful to me."
                             p "Show me your body in that pink suit!"
                             $ renpy.transition(dissolve)
@@ -2130,7 +2130,7 @@ label dharemspa1:
                             hide chochoshy
                             show chocho2
                             show chochonna
-                            show chochoc   
+                            show chochoc
                             ch "You really like it?"
                             p "Of course, I'm loving it."
                             p "I want to fuck you like a lady!"
@@ -2218,7 +2218,7 @@ label dharemspa1:
                                     p "Silence!"
                                     "Slash!" with hpunch
                                     show ch1sl2
-                                    p "This...."                        
+                                    p "This...."
                                     $ renpy.transition(dissolve)
                                     hide ch1an1
                                     show ch1an2
@@ -2259,7 +2259,7 @@ label dharemspa1:
                                     ch "This is perfect!!!!"
                                     $ renpy.transition(dissolve)
                                     hide ch1l2
-                                    p "Sure, it is... But it is hard to hold it longer."                        
+                                    p "Sure, it is... But it is hard to hold it longer."
                                     p "I feel stronger now... But tired at the same time."
                                     $ chakra = chakra + 1
                                     p "I should end this..."
@@ -2317,10 +2317,10 @@ label dharemspa1:
                                     p "And now..."
                                     ch "...."
                                     p "Just see you later..."
-                                    scene black with circleirisin               
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
                                     jump nharem
-                                    
+
                                 "Just normal fuck":
                                     p "I am tired today..."
                                     p "Maybe I just fuck you regular today..."
@@ -2466,11 +2466,11 @@ label dharemspa1:
                                     show chocho1
                                     show chochonna
                                     p "That dress??? Meh... ok..."
-                                    scene black with circleirisin               
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
                                     jump nharem
 
-                                    
+
                                 "Kage bunshin no jutsu":
                                     p "It is just...."
                                     p "One man is simply not enough."
@@ -2491,7 +2491,7 @@ label dharemspa1:
                                     hide ch1na
                                     show ch1op
                                     ch "Ouch!"
-                                    p "That fit you best."                
+                                    p "That fit you best."
                                     ch "MMMMmmm"
                                     $ renpy.transition(dissolve)
                                     show ch1tf1
@@ -2521,7 +2521,7 @@ label dharemspa1:
                                     p "I need one kage bunshin!"
                                     $ renpy.transition(dissolve)
                                     hide ch1tf2
-                                    show ch1tf3    
+                                    show ch1tf3
                                     hide ch1r1
                                     p "To put this in your ass..."
                                     $ renpy.transition(dissolve)
@@ -2537,7 +2537,7 @@ label dharemspa1:
                                     hide ch1an2
                                     show ch1an3
                                     hide ch1tf3
-                                    show ch1tf2 
+                                    show ch1tf2
                                     hide ch1cl
                                     show ch1clop
                                     ch "What???"
@@ -2548,7 +2548,7 @@ label dharemspa1:
                                     hide ch1tf2
                                     show ch1tf1
                                     hide ch1nf1
-                                    show ch1nf2                        
+                                    show ch1nf2
                                     ch "ARGGGGGGGGGGGGGG!!!!!"
                                     p "It fits in perfectly!!!"
                                     $ renpy.transition(dissolve)
@@ -2606,7 +2606,7 @@ label dharemspa1:
                                     show ch1milk
                                     hide ch1clop
                                     show ch1org
-                                    show ch1nf3                        
+                                    show ch1nf3
                                     ch "Yesss!!!!"
                                     p "Fuck!!!!"
                                     $ renpy.transition(dissolve)
@@ -2681,29 +2681,29 @@ label dharemspa1:
                                     ch "I feel perfect."
                                     p "I am exhausted!"
                                     p "I need some rest now... Bye.."
-                                    scene black with circleirisin               
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
                                     jump nharem
             else:
                 "How you want to talk with her if she is not here?"
-                scene black with circleirisin               
+                scene black with circleirisin
                 show dharem0 with circleirisout
                 jump dharem
-                
-                
-            
-                
+
+
+
+
 ####################################### 19 je max pre Ino
         "Pick Ino":
-            
+
             if inoslave >=20:
                         $ renpy.transition(dissolve)
                         show inon1
                         show inonna
                         p "It worked....What now?"
                         menu inon2222:
-                            "Strip":                                
-                                    p "Time to take off her clothes..." 
+                            "Strip":
+                                    p "Time to take off her clothes..."
                                     i "....."
                                     p "Strip!" with hpunch
                                     i "Sure..."
@@ -2728,12 +2728,12 @@ label dharemspa1:
                                     show inonna
                                     p "Good girl..."
                                     p "Time to do something else..."
-                                    scene black with circleirisin               
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
                                     jump nharem
-                                
-                            "Massage":                                
-                                    p "Time for a massage!" 
+
+                            "Massage":
+                                    p "Time for a massage!"
                                     i "Massage...."
                                     $ renpy.transition(dissolve)
                                     hide inon1
@@ -2771,7 +2771,7 @@ label dharemspa1:
                                     p "Good we can continue...."
                                     menu:
                                         "Touch her pussy":
-                                            "You slowly release her boobs..."    
+                                            "You slowly release her boobs..."
                                             $ renpy.transition(dissolve)
                                             hide ino3h3
                                             hide ino3h4
@@ -2826,14 +2826,14 @@ label dharemspa1:
                                             show inonna
                                             p "Good girl..."
                                             i "Thanks..."
-                                            scene black with circleirisin               
+                                            scene black with circleirisin
                                             show nharem0 with circleirisout
                                             jump nharem
                                         "Just boobs":
                                             p "I just play a little more with that boobs..."
                                             with fade
                                             "You give a nice massage to Ino."
-                                            "It is nice to touch her boobs..."                                      
+                                            "It is nice to touch her boobs..."
                                             with fade
                                             p "Ok you can dress now."
                                             $ renpy.transition(dissolve)
@@ -2848,12 +2848,12 @@ label dharemspa1:
                                             p "Hmm... You still look good..."
                                             i "*moan*"
                                             p "Nevermind..."
-                                            scene black with circleirisin               
+                                            scene black with circleirisin
                                             show nharem0 with circleirisout
                                             jump nharem
-                                
-                            "Play with her":  
-                                        p "Ok Ino. Strip." 
+
+                            "Play with her":
+                                        p "Ok Ino. Strip."
                                         i "..."
                                         $ renpy.transition(dissolve)
                                         hide inon1
@@ -2888,10 +2888,10 @@ label dharemspa1:
                                                 hide inosperm
                                                 p "Don't worry, we will do something more funny next time."
                                                 p "And you will do all the job, not me!"
-                                                scene black with circleirisin               
+                                                scene black with circleirisin
                                                 show nharem0 with circleirisout
                                                 jump nharem
-                                                
+
                                             "Expansion":
                                                 p "Time forexpansion technique."
                                                 p "I love her busty version."
@@ -2951,10 +2951,10 @@ label dharemspa1:
                                                 show inon1
                                                 show inocl
                                                 p "And do whatever you want... Bye...."
-                                                scene black with circleirisin               
+                                                scene black with circleirisin
                                                 show nharem0 with circleirisout
                                                 jump nharem
-                                                
+
                                             "Use clips":
                                                     p "Maybe i can use that clips...."
                                                     p "But not on that small boobs..."
@@ -3032,13 +3032,13 @@ label dharemspa1:
                                                     p "Or maybe you should stay naked?"
                                                     i "...."
                                                     p "Who cares..."
-                                                    scene black with circleirisin               
+                                                    scene black with circleirisin
                                                     show nharem0 with circleirisout
-                                                    jump nharem        
-                                                
-                                
+                                                    jump nharem
+
+
                             "Blowjob":
-                                        p "I want to fuck your mouth today."                                        
+                                        p "I want to fuck your mouth today."
                                         p "You know what to do now."
                                         i "...."
                                         $ renpy.transition(dissolve)
@@ -3060,9 +3060,9 @@ label dharemspa1:
                                         $ renpy.transition(dissolve)
                                         hide ino4d
                                         hide ino4dok
-                                        hide ino4bl1                                        
+                                        hide ino4bl1
                                         show ino4a
-                                        show ino4aok  
+                                        show ino4aok
                                         show ino4bl1
                                         i "....."
                                         p "You can take it in your mouth now."
@@ -3070,7 +3070,7 @@ label dharemspa1:
                                         p "Do not worry I will help you..."
                                         $ renpy.transition(dissolve)
                                         hide ino4bl1
-                                        hide ino4aok 
+                                        hide ino4aok
                                         show ino4acl
                                         show ino4bl2
                                         i "Huh??? *Slurp smack drip*"
@@ -3103,7 +3103,7 @@ label dharemspa1:
                                         hide ino4bl3
                                         hide ino4acl
                                         show ino4aokop
-                                        show ino4bl4       
+                                        show ino4bl4
                                         i "mgmmhmmm... * choke*"
                                         p "YEAH!!!"
                                         $ renpy.transition(dissolve)
@@ -3117,12 +3117,12 @@ label dharemspa1:
                                         hide ino4bl3
                                         hide ino4aokop
                                         show ino4aokop
-                                        show ino4bl4 
-                                        i "Grgggggggg... * choke*"    
+                                        show ino4bl4
+                                        i "Grgggggggg... * choke*"
                                         p "Yeah... You love it...."
                                         menu:
                                             "Increase boob size":
-                                                p "It will be nice to increase it them for a little..."                                                
+                                                p "It will be nice to increase it them for a little..."
                                                 p "Expansion!!!"
                                                 $ renpy.transition(dissolve)
                                                 hide ino4a
@@ -3139,7 +3139,7 @@ label dharemspa1:
                                                 show ino4aokop
                                                 show ino4bl4
                                                 p "Shit I think I will cum soon...."
-                                                
+
                                             "Just Cum":
                                                 p "Fuck this is just so good...."
                                                 $ renpy.transition(dissolve)
@@ -3154,11 +3154,11 @@ label dharemspa1:
                                                 show ino4aokop
                                                 show ino4bl4
                                                 p "Shit I think I will cum soon...."
-                                                
+
                                         menu:
                                             "Cum in":
                                                 p "Fuck! Take it ! *spurt*"
-                                                $ renpy.transition(dissolve)                                        
+                                                $ renpy.transition(dissolve)
                                                 hide ino4aokop
                                                 show ino4acl
                                                 hide ino4bl4
@@ -3170,10 +3170,10 @@ label dharemspa1:
                                                 i "grggfggg... *gulp*"
                                                 with fade
                                                 i "chrrrr....*swallow*"
-                                                $ renpy.transition(dissolve)                                        
-                                                hide ino4blin                                     
+                                                $ renpy.transition(dissolve)
+                                                hide ino4blin
                                                 p "Good job Ino."
-                                                $ renpy.transition(dissolve) 
+                                                $ renpy.transition(dissolve)
                                                 hide ino4acl
                                                 show ino4aclop
                                                 hide ino4bl4
@@ -3193,10 +3193,10 @@ label dharemspa1:
                                                 show inon1
                                                 show inonnaop
                                                 p "Anyway.... See you later..."
-                                                scene black with circleirisin               
+                                                scene black with circleirisin
                                                 show nharem0 with circleirisout
-                                                jump nharem 
-                                                
+                                                jump nharem
+
                                             "Cum out":
                                                 $ renpy.transition(dissolve)
                                                 hide ino4bl4
@@ -3240,21 +3240,21 @@ label dharemspa1:
                                                 p "Huh? You are clean already?"
                                                 i "..."
                                                 p "Ok..."
-                                                scene black with circleirisin               
+                                                scene black with circleirisin
                                                 show nharem0 with circleirisout
-                                                jump nharem 
-                                            
-                                        
-                                        
-                                
+                                                jump nharem
+
+
+
+
                             "Titfuck":
-                                
-                                        p "Ok Ino. Time to fuck your tits..."                                         
+
+                                        p "Ok Ino. Time to fuck your tits..."
                                         i "..."
                                         p "Lay down and take your clothes off."
                                         $ renpy.transition(dissolve)
                                         hide inon1
-                                        hide inonna    
+                                        hide inonna
                                         show ino3n1
                                         show ino3nor
                                         p "Yes... This is nice..."
@@ -3267,7 +3267,7 @@ label dharemspa1:
                                         show ino3shy
                                         show ino3shock
                                         i "Argggg.... *moan*"
-                                        p "Wow!!! That is better..."    
+                                        p "Wow!!! That is better..."
                                         p "I really want to stick it in now!"
                                         $ renpy.transition(dissolve)
                                         show ino3tf1
@@ -3294,7 +3294,7 @@ label dharemspa1:
                                         $ renpy.transition(dissolve)
                                         hide ino3tf3
                                         show ino3tf2
-                                        p "Your tits is so soft!"                                        
+                                        p "Your tits is so soft!"
                                         $ renpy.transition(dissolve)
                                         hide ino3tf2
                                         show ino3tf3
@@ -3349,12 +3349,12 @@ label dharemspa1:
                                         show inon1
                                         show inonna
                                         p "You still look happy... I know why...."
-                                        scene black with circleirisin               
+                                        scene black with circleirisin
                                         show nharem0 with circleirisout
-                                        jump nharem 
-                            
-                            "Fuck pussy":                                
-                                        p "Time to fuck your pussy..."                                         
+                                        jump nharem
+
+                            "Fuck pussy":
+                                        p "Time to fuck your pussy..."
                                         i "Yes!"
                                         p "Are you looking forward to it? Me too..."
                                         p "Just ....."
@@ -3379,7 +3379,7 @@ label dharemspa1:
                                         hide ino3p1
                                         show ino3p2
                                         hide ino3clop
-                                        show ino3cl                                        
+                                        show ino3cl
                                         i "Yesss!!!!"
                                         p "You are so cute Ino. Just..."
                                         $ renpy.transition(dissolve)
@@ -3390,7 +3390,7 @@ label dharemspa1:
                                         hide ino3p3
                                         show ino3p4
                                         hide ino3cl
-                                        show ino3clop 
+                                        show ino3clop
                                         i "More....*moan*"
                                         $ renpy.transition(dissolve)
                                         hide ino3p4
@@ -3411,23 +3411,23 @@ label dharemspa1:
                                                 show ino3clips
                                                 hide ino3clop
                                                 show ino3shock
-                                                i "Arggg...."  
+                                                i "Arggg...."
                                                 $ renpy.transition(dissolve)
                                                 hide ino3p3
                                                 show ino3p4
                                                 p "Nice....And now release a little lightning..."
-                                                $ renpy.transition(dissolve)                                                
+                                                $ renpy.transition(dissolve)
                                                 hide ino3p4
                                                 show ino3p3
                                                 show ino3l1
                                                 i "Mmmmmm *moan*"
-                                                $ renpy.transition(dissolve)                                                
+                                                $ renpy.transition(dissolve)
                                                 hide ino3p3
                                                 show ino3p4
                                                 show ino3l2
                                                 show ino3l3
                                                 p "hehe... Time to fun!"
-                                                $ renpy.transition(dissolve)                                                
+                                                $ renpy.transition(dissolve)
                                                 hide ino3p4
                                                 show ino3p3
                                                 show ino3milk
@@ -3483,19 +3483,19 @@ label dharemspa1:
                                                 show ino3p3
                                                 hide ino3clips
                                                 jump inofupu111
-                                                
-                                                
+
+
                                             "Cum in":
                                                 p "That is my limit!"
                                                 $ renpy.transition(dissolve)
                                                 hide ino3p3
                                                 show ino3p4
-                                                show ino3milk                                        
+                                                show ino3milk
                                                 i "YES!!! *sqiurt*"
                                                 $ renpy.transition(dissolve)
                                                 hide ino3p4
                                                 show ino3p3
-                                                hide ino3clop 
+                                                hide ino3clop
                                                 show ino3org
                                                 p "Yeah! *slurp*"
                                                 $ renpy.transition(dissolve)
@@ -3513,13 +3513,13 @@ label dharemspa1:
                                                 show ino3cl
                                                 i "......*drop*"
                                                 i "Just..."
-                                                
+
                                             "Cum out":
                                                 p "Shit, you are amazing!"
                                                 $ renpy.transition(dissolve)
                                                 hide ino3p3
                                                 show ino3p4
-                                                show ino3milk                                        
+                                                show ino3milk
                                                 i "OOoooooooo!!! *sqiurt*"
                                                 $ renpy.transition(dissolve)
                                                 hide ino3p4
@@ -3528,12 +3528,12 @@ label dharemspa1:
                                                 $ renpy.transition(dissolve)
                                                 hide ino3p3
                                                 show ino3p2
-                                                hide ino3clop 
+                                                hide ino3clop
                                                 show ino3org
                                                 p "Fuck almost!!!"
                                                 $ renpy.transition(dissolve)
                                                 hide ino3p2
-                                                show ino3p1                                                
+                                                show ino3p1
                                                 p "Yeah! *slurp*"
                                                 $ renpy.transition(dissolve)
                                                 show ino3pspout1
@@ -3548,8 +3548,8 @@ label dharemspa1:
                                                 show ino3cl
                                                 i "......*drop*"
                                                 i "Mmmm....."
-                                                
-                                        
+
+
                                         p "Incredible... And you really enjoy it!!!."
                                         p "But first clean yourself..."
                                         $ renpy.transition(dissolve)
@@ -3561,7 +3561,7 @@ label dharemspa1:
                                         hide ino3milk
                                         hide ino3p4
                                         hide ino3p1
-                                        p "Now you can dress..."                                    
+                                        p "Now you can dress..."
                                         $ renpy.transition(dissolve)
                                         hide ino3n1
                                         hide ino3cl
@@ -3571,13 +3571,13 @@ label dharemspa1:
                                         show inon1
                                         show inonna
                                         p "Ok... Now back to the work..."
-                                        scene black with circleirisin               
+                                        scene black with circleirisin
                                         show nharem0 with circleirisout
-                                        jump nharem 
-                                        
-                                
+                                        jump nharem
+
+
                             "Fuck ass":
-                              
+
                                         p "Ok... So it is time to fuck your ass."
                                         i "Sure..."
                                         $ renpy.transition(dissolve)
@@ -3606,7 +3606,7 @@ label dharemspa1:
                                                     hide ino4e
                                                     hide ino4f
                                                     show ino4d
-                                                    show ino4dok  
+                                                    show ino4dok
                                                     with fade
                                                     p "Ok... Maybe if I start with something like..."
                                                     $ renpy.transition(dissolve)
@@ -3631,7 +3631,7 @@ label dharemspa1:
                                                     hide ino4dok
                                                     hide ino4d
                                                     show ino4e
-                                                    show ino4dcl                                                
+                                                    show ino4dcl
                                                     show ino4ap4
                                                     p "Good but I should try harder...."
                                                     p "Expansion!!!"
@@ -3640,10 +3640,10 @@ label dharemspa1:
                                                     hide ino4dcl
                                                     hide ino4e
                                                     show ino4f
-                                                    show ino4dcl                                               
+                                                    show ino4dcl
                                                     show ino4ap4
                                                     i "ARghhhhh *pain*"
-                                                    p "Yes that looks better... Hmm but she miss something...."                                                
+                                                    p "Yes that looks better... Hmm but she miss something...."
                                                     $ renpy.transition(dissolve)
                                                     show ino4text1
                                                     p "And some more here to not forget..."
@@ -3695,11 +3695,11 @@ label dharemspa1:
                                                 else:
                                                     "I need healing scroll for that."
                                                     p "Just have to be careful."
-                                                $ renpy.transition(dissolve)    
+                                                $ renpy.transition(dissolve)
                                                 hide ino4dshock
                                                 show ino4dok
                                                 jump inoassfuck5555
-                                                
+
                                             "Fuck her ass":
                                                 p "Ok...."
                                                 $ renpy.transition(dissolve)
@@ -3767,8 +3767,8 @@ label dharemspa1:
                                                         p "hehe.... *drip*"
                                                         i "......"
                                                         p "That was funny..."
-                                        
-                                                        
+
+
                                                     "Cum out":
                                                         p "Yeah!!!"
                                                         $ renpy.transition(dissolve)
@@ -3785,7 +3785,7 @@ label dharemspa1:
                                                         p "Nice look... *drip*"
                                                         i "......"
                                                         p "You enjoy it right?"
-                                                        
+
                                                     "Hold it":
                                                         p "I should hold it...."
                                                         $ renpy.transition(dissolve)
@@ -3793,11 +3793,11 @@ label dharemspa1:
                                                         show ino4as1
                                                         p "And try something else..."
                                                         $ renpy.transition(dissolve)
-                                                        hide ino4as1        
+                                                        hide ino4as1
                                                         hide ino4dokop
                                                         show ino4dok
                                                         jump inoassfuck5555
-                                                
+
                                             "Kage Bunshin":
                                                 p "Time to play!"
                                                 p "Just need to prepare everything..."
@@ -3855,7 +3855,7 @@ label dharemspa1:
                                                 menu:
                                                     "YES":
                                                         p "Hehe..."
-                                                        $ renpy.transition(dissolve)                                                        
+                                                        $ renpy.transition(dissolve)
                                                         hide ino4as1
                                                         hide ino4pp1
                                                         show ino4as1
@@ -3868,8 +3868,8 @@ label dharemspa1:
                                                         show ino4as1
                                                         show ino4pp1
                                                         show ino4text2
-                                                        
-                                                        
+
+
                                                     "NO":
                                                         p "Ok...."
                                                 i "...."
@@ -3877,7 +3877,7 @@ label dharemspa1:
                                                 $ renpy.transition(dissolve)
                                                 hide ino4as1
                                                 show ino4as2
-                                                hide ino4pp1                                                
+                                                hide ino4pp1
                                                 show ino4pp2
                                                 hide ino4aokop
                                                 show ino4aclop
@@ -3903,7 +3903,7 @@ label dharemspa1:
                                                 show ino4aokop
                                                 hide ino4as3
                                                 show ino4as4
-                                                hide ino4pp3                                                
+                                                hide ino4pp3
                                                 show ino4pp4
                                                 hide ino4bl4
                                                 show ino4bl3
@@ -3911,7 +3911,7 @@ label dharemspa1:
                                                 $ renpy.transition(dissolve)
                                                 hide ino4as4
                                                 show ino4as3
-                                                hide ino4pp4                                            
+                                                hide ino4pp4
                                                 show ino4pp3
                                                 hide ino4bl3
                                                 show ino4bl4
@@ -3919,7 +3919,7 @@ label dharemspa1:
                                                 $ renpy.transition(dissolve)
                                                 hide ino4as3
                                                 show ino4as4
-                                                hide ino4pp3                                                
+                                                hide ino4pp3
                                                 show ino4pp2
                                                 hide ino4bl4
                                                 show ino4bl3
@@ -3927,7 +3927,7 @@ label dharemspa1:
                                                 $ renpy.transition(dissolve)
                                                 hide ino4as4
                                                 show ino4as3
-                                                hide ino4pp2                                                
+                                                hide ino4pp2
                                                 show ino4pp1
                                                 hide ino4bl3
                                                 show ino4bl4
@@ -3953,7 +3953,7 @@ label dharemspa1:
                                                 show ino4pp2
                                                 show ino4asout1
                                                 hide ino4bl4
-                                                show ino4bl3                                                
+                                                show ino4bl3
                                                 p "Again!!! *slurp*"
                                                 $ renpy.transition(dissolve)
                                                 hide ino4pp2
@@ -4012,9 +4012,9 @@ label dharemspa1:
                                                 p "Look at you Ino...."
                                                 p "You look like cum dump...."
                                                 i "Grgggggg....."
-                                                p "I'm just really exhausted now."                                                
+                                                p "I'm just really exhausted now."
                                                 p "Namigan is already at the limit..."
-                                        
+
                                         i "....*drip*"
                                         with fade
                                         p "ehm....You can clean yourself and dress..."
@@ -4060,24 +4060,24 @@ label dharemspa1:
                                         p "No sperm in ass???"
                                         i "..... no ......"
                                         p "That is sad..... Bye..."
-                                        scene black with circleirisin               
+                                        scene black with circleirisin
                                         show nharem0 with circleirisout
-                                        jump nharem 
-                
+                                        jump nharem
+
             else:
                 "How you want to talk with her if she is not here?"
-                scene black with circleirisin               
+                scene black with circleirisin
                 show dharem0 with circleirisout
                 jump dharem
-    
+
         "Go back to the map":
-            scene black with circleirisin               
+            scene black with circleirisin
             show dharem0 with circleirisout
-            jump dharem 
+            jump dharem
     "This is local spa."
-    scene black with circleirisin               
+    scene black with circleirisin
     show dharem0 with circleirisout
-    jump dharem 
+    jump dharem
 
 
 
@@ -4123,26 +4123,26 @@ label dharemhouse1:
                         jump dharemhouse1
                     else:
                         "You need more Ryo for that."
-                        scene black with circleirisin               
+                        scene black with circleirisin
                         show dharem0 with circleirisout
-                        jump dharem 
-                    
+                        jump dharem
+
                 "Later":
                     "Maybe later..."
-                    scene black with circleirisin               
+                    scene black with circleirisin
                     show dharem0 with circleirisout
-                    jump dharem 
+                    jump dharem
     else:
         menu:
-            
+
             "Rest":
                 "You gained some energy."
-                scene black with circleirisin               
+                scene black with circleirisin
                 show nharem0 with circleirisout
                 jump nharem
-                
+
             "Call Hinata":
-                
+
                 if hinatamission >=15:
                     $ renpy.transition(dissolve)
                     show hinab1
@@ -4213,7 +4213,7 @@ label dharemhouse1:
                                     hide hinabs1
                                     hide hinabs2
                                     hide hinabs3
-                                    hide hinabs4                                
+                                    hide hinabs4
                                     hide hinabm2
                                     hi "And this..."
                                     $ renpy.transition(dissolve)
@@ -4223,12 +4223,12 @@ label dharemhouse1:
                                     p "...."
                                     hi "Next time I can play with your dick a little next time."
                                     p "Next time?"
-                                    hi "I am satisfied now... And tired..."   
+                                    hi "I am satisfied now... And tired..."
                                     p "Ok... So next time...."
-                                    scene black with circleirisin               
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
                                     jump nharem
-                                    
+
                                 "Use jutsu":
                                     p "I want to test some jutsu on you..."
                                     hi "Ok... what do you want to test first?"
@@ -4246,7 +4246,7 @@ label dharemhouse1:
                                     $ renpy.transition(dissolve)
                                     hide hinabop
                                     show hinabcla
-                                    show hinabdr2                              
+                                    show hinabdr2
                                     hi "Fuck... try something else this is not sexi..."
                                     p "Sure! Water style!"
                                     $ renpy.transition(dissolve)
@@ -4287,7 +4287,7 @@ label dharemhouse1:
                                     show hinabm1
                                     hi "Aaaaaaa... *squirt*"
                                     p "Fuck...."
-                                    hi "Grrrrr.... *pant*"     
+                                    hi "Grrrrr.... *pant*"
                                     p "I can't hold it anymore..."
                                     $ renpy.transition(dissolve)
                                     hide hinabl2
@@ -4311,7 +4311,7 @@ label dharemhouse1:
                                     hide hinabw1
                                     hide hinabw2
                                     hide hinabw3
-                                    hide hinabdr1                               
+                                    hide hinabdr1
                                     hide hinabdr2
                                     hide hinabm2
                                     hi "And take out this...*plumb*"
@@ -4321,12 +4321,12 @@ label dharemhouse1:
                                     hi "Ahhh.*moan stretch* I'm feeling so relaxed right now"
                                     p "Actually, I used too much chakra...."
                                     p "I need to rest now... See you later..."
-                                    hi "Sure bye."   
-                                    scene black with circleirisin               
+                                    hi "Sure bye."
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
                                     jump nharem
-                                
-                            
+
+
                         "Play with her boobs":
                                 p "I want to play with your boobs."
                                 hi "This one again? Ok....."
@@ -4397,11 +4397,11 @@ label dharemhouse1:
                                             show hina7ok
                                             hi "Wait, you will leave me like this?"
                                             p "Sure... Why not...."
-                                            scene black with circleirisin               
+                                            scene black with circleirisin
                                             show nharem0 with circleirisout
                                             jump nharem
-                                            
-                                    
+
+
                                     "Touch her boobs":
                                         hi "So what do you want to do?"
                                         $ renpy.transition(dissolve)
@@ -4463,14 +4463,14 @@ label dharemhouse1:
                                         hi "This was..."
                                         p "Just say it!"
                                         hi "It was not bad."
-                                        p "I know it from your gesture."                        
+                                        p "I know it from your gesture."
                                         hi "We can continue later."
                                         p "Maybe..."
                                         hi "..."
                                         hi "Asshole..."
                                         p "What???"
                                         hi "*sigh*"
-                                        scene black with circleirisin               
+                                        scene black with circleirisin
                                         show nharem0 with circleirisout
                                         jump nharem
                                     "Make them bigger":
@@ -4538,7 +4538,7 @@ label dharemhouse1:
                                         p "Sure..."
                                         $ renpy.transition(dissolve)
                                         hide hina7l3
-                                        hide hina7cl2  
+                                        hide hina7cl2
                                         hide hina7c
                                         hide hina7hap
                                         hide hina7cl1
@@ -4553,10 +4553,10 @@ label dharemhouse1:
                                         p "It was nothing... But I need to rest now.."
                                         hi "Yes, I understant...*sigh*"
                                         p "See you later..."
-                                        scene black with circleirisin               
+                                        scene black with circleirisin
                                         show nharem0 with circleirisout
                                         jump nharem
-                                
+
                         "Fuck her pussy":
                                 p "It is a time to play with your pussy for a while."
                                 hi "You mean?"
@@ -4672,10 +4672,10 @@ label dharemhouse1:
                                         hi "But give me some time now I need a rest."
                                         p "Sure. Anything you want."
                                         p "Bye..."
-                                        scene black with circleirisin               
+                                        scene black with circleirisin
                                         show nharem0 with circleirisout
                                         jump nharem
-                                        
+
                                     "Use clone":
                                         p "Fuck you as hard as I can."
                                         $ renpy.transition(dissolve)
@@ -4775,11 +4775,11 @@ label dharemhouse1:
                                         hi "*mumble*"
                                         p "Just need some rest... I will check her tomorrow if she is fine..."
                                         p "I just bring her to the bed and go out..."
-                                        scene black with circleirisin               
+                                        scene black with circleirisin
                                         show nharem0 with circleirisout
                                         jump nharem
-                            
-                            
+
+
                         "Fuck her ass":
                                 p "I want to fuck your ass tonight."
                                 hi "I understant...."
@@ -4914,10 +4914,10 @@ label dharemhouse1:
                                         p "What is with you asshole?"
                                         hi "You may go to your room now..."
                                         p "Sure..."
-                                        scene black with circleirisin               
+                                        scene black with circleirisin
                                         show nharem0 with circleirisout
                                         jump nharem
-                                        
+
                                     "Cum out":
                                         p "I will..."
                                         $ renpy.transition(dissolve)
@@ -4945,12 +4945,12 @@ label dharemhouse1:
                                         p "I see that..."
                                         hi "Just leave me please."
                                         p "Sure... Bye..."
-                                        scene black with circleirisin               
+                                        scene black with circleirisin
                                         show nharem0 with circleirisout
                                         jump nharem
-                                        
-                                
-                                
+
+
+
                         "Something else":
                                         p "I want to have fun with you tonight."
                                         hi "Sure. What do you want to do?"
@@ -5043,7 +5043,7 @@ label dharemhouse1:
                                         show hina1p3
                                         hide hina1tf2
                                         show hina1tf3
-                                        p "That ASS!!! *slap*" 
+                                        p "That ASS!!! *slap*"
                                         $ renpy.transition(dissolve)
                                         hide hina1p3
                                         show hina1p4
@@ -5096,10 +5096,10 @@ label dharemhouse1:
                                                 p "Yeah... Your boobs is...."
                                                 hi "Just shut up I want to enjoy your sperm in me."
                                                 p "Ehm... Sure..."
-                                                scene black with circleirisin               
+                                                scene black with circleirisin
                                                 show nharem0 with circleirisout
                                                 jump nharem
-                                                
+
                                             "Cum out":
                                                 p "I will...."
                                                 $ renpy.transition(dissolve)
@@ -5123,19 +5123,19 @@ label dharemhouse1:
                                                 p "Yeah... Your boobs is...."
                                                 hi "You cum so much on my body."
                                                 hi "mmmmmm...."
-                                                scene black with circleirisin     
+                                                scene black with circleirisin
                                                 "Hinata fall asleep, you decide to not wake her up."
                                                 show nharem0 with circleirisout
                                                 jump nharem
-                                                
-                    
-                    
-                
+
+
+
+
                 else:
                     "She is not here."
                     jump dharemhouse1
-                    
-                
+
+
             "Call Himawari":
                 "..."
                 if hinami <=10:
@@ -5189,10 +5189,10 @@ label dharemhouse1:
                                     $ ninjutsu = ninjutsu + 1
                                     "But your influence on her is same as before training."
                                     "Himawari look tired too..."
-                                    scene black with circleirisin               
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
                                     jump nharem
-                                    
+
                                 "Use chakra clips":
                                     p "Ok it is a good time to train your endurance."
                                     hide hishy
@@ -5237,7 +5237,7 @@ label dharemhouse1:
                                     hide himilk
                                     hide hiclips
                                     p "Good now I need some rest... See you later."
-                                    scene black with circleirisin               
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
                                     jump nharem
 
@@ -5280,7 +5280,7 @@ label dharemhouse1:
                                         show hiclorg
                                         h "Noooooo...." with hpunch
                                         p "Wait for it."
-                                        with fade                                        
+                                        with fade
                                         hide hiscars
                                         p "that is really impressive healing ability."
                                         p "Let's try it a few more times."
@@ -5290,13 +5290,13 @@ label dharemhouse1:
                                         $ renpy.transition(dissolve)
                                         show hiscars
                                         "That was fun. But there is also a possibility to fuck her. Try it next time ok?"
-                                        scene black with circleirisin               
+                                        scene black with circleirisin
                                         show nharem0 with circleirisout
                                         jump nharem
-                                
+
                         "Play with her":
-                            p "Time to play with you a little."          
-                            p "Take that cloak off and lay down."                            
+                            p "Time to play with you a little."
+                            p "Take that cloak off and lay down."
                             $ renpy.transition(dissolve)
                             hide hishy
                             hide hibln
@@ -5356,7 +5356,7 @@ label dharemhouse1:
                                     show h1ta1
                                     hide h1org
                                     show h1scared
-                                    h "!!!!" 
+                                    h "!!!!"
                                     p "Hehe."
                                     $ renpy.transition(dissolve)
                                     hide h1ta1
@@ -5383,7 +5383,7 @@ label dharemhouse1:
                                     h "..."
                                     p "Ok, I will rest now... You should lick my cock during whole night."
                                     h "Sure..."
-                                    scene black with circleirisin               
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
                                     jump nharem
                                 "Pain Train":
@@ -5428,7 +5428,7 @@ label dharemhouse1:
                                     "wzzzmmmm"
                                     h "!!!!"
                                     show h1slash2
-                                    "Slash!" with hpunch                                    
+                                    "Slash!" with hpunch
                                     p "More!"
                                     show h1slash1
                                     hide h1ouch
@@ -5449,9 +5449,9 @@ label dharemhouse1:
                                     p "And you self heal once again."
                                     p "Ok, I will rest now... You should lick my cock during whole night."
                                     h "Sure..."
-                                    scene black with circleirisin               
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
-                                    jump nharem                                 
+                                    jump nharem
                                 "Special Jutsu":
                                     p "I want to test something on you."
                                     $ renpy.transition(dissolve)
@@ -5521,10 +5521,10 @@ label dharemhouse1:
                                     p "You did well."
                                     p "Ok, I will rest now... You should lick my cock during whole night."
                                     h "Sure..."
-                                    scene black with circleirisin               
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
                                     jump nharem
-                            
+
                         "Play with me":
                             p "This is the good time to show me your skills."
                             h "And what you mean by that?"
@@ -5532,7 +5532,7 @@ label dharemhouse1:
                             hide hibln
                             show hiblop
                             h "Ok I can do that just lay down."
-                            p "I am very curious if you improve."                            
+                            p "I am very curious if you improve."
                             $ renpy.transition(dissolve)
                             hide hishy
                             hide hiclopen
@@ -5601,7 +5601,7 @@ label dharemhouse1:
                                     $ renpy.transition(dissolve)
                                     hide h2red
                                     jump hiblowj1
-                                    
+
                                 "Use whip":
                                     p "I want to try somthing."
                                     $ renpy.transition(dissolve)
@@ -5624,7 +5624,7 @@ label dharemhouse1:
                                     $ renpy.transition(dissolve)
                                     show h2scar1
                                     "Whip!" with vpunch
-                                    $ renpy.transition(dissolve)                                    
+                                    $ renpy.transition(dissolve)
                                     hide h2h3
                                     show h2h2
                                     h "Ommmm...."
@@ -5737,7 +5737,7 @@ label dharemhouse1:
                                     hide h2clipsl
                                     hide h2clips
                                     jump hiblowj1
-                                    
+
                                 "Cum":
                                     p "I am almost...."
                                     p "Yesssss!!! *splurt*"
@@ -5768,14 +5768,14 @@ label dharemhouse1:
                                     p "You have really good skill."
                                     p "But I still hope you will be better next time."
                                     h "I will try..."
-                                    scene black with circleirisin               
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
                                     jump nharem
-                            
+
                         "Fuck her":
                             p "No foreplay today."
                             p "Just strip and lay down"
-                            h "Sure."                                                     
+                            h "Sure."
                             $ renpy.transition(dissolve)
                             hide hishy
                             hide hibln
@@ -5840,7 +5840,7 @@ label dharemhouse1:
                                             show hi3hr1
                                             hide hi3hl3
                                             show hi3hl1
-                                            
+
                                         "Give her time to heal":
                                             p "Relax now..."
                                             p "That red color is almost glowing..."
@@ -5866,7 +5866,7 @@ label dharemhouse1:
                                             hide hi3hr1
                                             hide hi3hl1
                                             p "It look good... What now?"
-                                    
+
                                     jump hima5551
                                 "Use clips":
                                     p "Maybe I use something you like now."
@@ -5898,7 +5898,7 @@ label dharemhouse1:
                                     $ renpy.transition(dissolve)
                                     hide hi3clok
                                     show hi3org
-                                    p "More chakra!" with hpunch 
+                                    p "More chakra!" with hpunch
                                     p "Lightning style second gate!"
                                     hide hi3clipsl
                                     show hi3clipslex
@@ -5923,7 +5923,7 @@ label dharemhouse1:
                                             hide hi3org2
                                             show hi3normal
                                             p "You can keep her for next step."
-                                                                                        
+
                                         "Remove clips":
                                             p "That clips is nice."
                                             $ renpy.transition(dissolve)
@@ -5933,7 +5933,7 @@ label dharemhouse1:
                                             p "But it is time to remove them and try something else."
                                             hide hi3clips
                                             hide hi3drops
-                                    
+
                                     jump hima5551
                                 "Use whip":
                                     p "You need to respect me."
@@ -5943,7 +5943,7 @@ label dharemhouse1:
                                     h "Argg.g...."
                                     $ renpy.transition(dissolve)
                                     hide hi3normal
-                                    show hi3clteeth                                    
+                                    show hi3clteeth
                                     h "Why????"
                                     "Whip!" with hpunch
                                     p "Is it not clear?"
@@ -5958,7 +5958,7 @@ label dharemhouse1:
                                     show hi3clop
                                     h "Ouuuuu...."
                                     p "You need to endure this!!!!"
-                                    "Slash!" with hpunch 
+                                    "Slash!" with hpunch
                                     h "Arggg..."
                                     show hi3scar3
                                     "Whip!" with hpunch
@@ -5988,10 +5988,10 @@ label dharemhouse1:
                                             p "I give you a time to heal these scars."
                                             with fade
                                             $ renpy.transition(dissolve)
-                                            hide hi3scar1 
+                                            hide hi3scar1
                                             hide hi3clteeth
                                             show hi3normal
-                                            p "..."                                            
+                                            p "..."
                                             $ renpy.transition(dissolve)
                                             hide hi3scar2
                                             p "Yes they are disappearing."
@@ -5999,7 +5999,7 @@ label dharemhouse1:
                                             hide hi3scar3
                                             hide hi3drops
                                             p "You look good."
-                                            p "Now is time for..."                                    
+                                            p "Now is time for..."
                                     jump hima5551
                                 "Use dildo":
                                     p "Time for your favorite toy!"
@@ -6008,7 +6008,7 @@ label dharemhouse1:
                                     $ renpy.transition(dissolve)
                                     hide hi3normal
                                     show hi3scared
-                                    h "Wait what?" 
+                                    h "Wait what?"
                                     show hi3dil1
                                     h "Arg...." with hpunch
                                     p "Come on I know you love that."
@@ -6031,7 +6031,7 @@ label dharemhouse1:
                                     hide hanal
                                     show hi3dil1
                                     hide hi3clteeth
-                                    show hi3sad                                    
+                                    show hi3sad
                                     h "No...."
                                     p "???"
                                     h "Turn it on...."
@@ -6060,7 +6060,7 @@ label dharemhouse1:
                                             show hi3normal
                                             hide hi3drops
                                             p "And now is time for."
-                                            
+
                                         "Let dildo inside":
                                             p "I just turn it off."
                                             $ renpy.transition(dissolve)
@@ -6071,8 +6071,8 @@ label dharemhouse1:
                                             $ renpy.transition(dissolve)
                                             hide hi3org
                                             show hi3normal
-                                            p "Because the fun is just beginning."                                            
-                                    
+                                            p "Because the fun is just beginning."
+
                                     jump hima5551
                                 "Fuck her":
                                     p "This is a good time for real action!"
@@ -6137,7 +6137,7 @@ label dharemhouse1:
                                     p "..."
                                     menu:
                                         "Cum inside":
-                                            h "That is..."   
+                                            h "That is..."
                                             hide hi3p3
                                             show hi3spermin
                                             p "Take that!" with hpunch
@@ -6155,10 +6155,10 @@ label dharemhouse1:
                                             h "..."
                                             p "You will be with me tonight. And take care of my body."
                                             h "Sure..."
-                                            scene black with circleirisin               
+                                            scene black with circleirisin
                                             show nharem0 with circleirisout
                                             jump nharem
-                                            
+
                                         "Cum out":
                                             $ renpy.transition(dissolve)
                                             hide hi3p3
@@ -6187,14 +6187,14 @@ label dharemhouse1:
                                             p "You can do it better next time."
                                             p "You will be with me tonight. And take care of my body."
                                             h "Sure..."
-                                            scene black with circleirisin               
+                                            scene black with circleirisin
                                             show nharem0 with circleirisout
                                             jump nharem
-                                            
+
                         "Kage bunshin":
                             p "I always want to try this."
                             p "I think it will be a real fun! Strip!"
-                            h "Sure."                                                     
+                            h "Sure."
                             $ renpy.transition(dissolve)
                             hide hishy
                             hide hibln
@@ -6257,7 +6257,7 @@ label dharemhouse1:
                                     hide him3xf4
                                     show him3xf3
                                     p "Yes this is better!"
-                                    
+
                                 "Huge boobs expansion":
                                     p "Make them really big."
                                     $ renpy.transition(dissolve)
@@ -6282,12 +6282,12 @@ label dharemhouse1:
                                     hide him3xf4
                                     show him3xf3
                                     p "I just love huge boobs!"
-                                    
+
                             $ renpy.transition(dissolve)
                             hide him3xbl3
                             show him3xbl2
                             hide him3xf3
-                            show him3xf4 
+                            show him3xf4
                             h "Gmmgmm.*gag cough*"
                             $ renpy.transition(dissolve)
                             hide him3xcl
@@ -6296,7 +6296,7 @@ label dharemhouse1:
                             hide him3xbl2
                             show him3xbl3
                             hide him3xf4
-                            show him3xf3 
+                            show him3xf3
                             p "I want to fuck you more..."
                             $ renpy.transition(dissolve)
                             hide him3xbl3
@@ -6339,11 +6339,11 @@ label dharemhouse1:
                             p "Hehe, nice right?"
                             h "Gggggh.... *cough gag*"
                             p "Good night, kid."
-                            scene black with circleirisin               
+                            scene black with circleirisin
                             show nharem0 with circleirisout
                             jump nharem
-                            
-                
+
+
             "Call Hanabi":
                 if hanabislave >=8:
                             $ renpy.transition(dissolve)
@@ -6370,11 +6370,11 @@ label dharemhouse1:
                                         p "Your tongue is amazing. I hope it can do more than just kissing."
                                         ha "..."
                                         p "I am tired today, next time we can have more fun..."
-                                        scene black with circleirisin  
+                                        scene black with circleirisin
                                         "You ordered Hanabi to dress and release Namigan. She didn't remember anything and was happy that she can help you."
                                         show nharem0 with circleirisout
                                         jump nharem
-                                    
+
                                 "Play with her":
                                         p "Now show me your body."
                                         $ renpy.transition(dissolve)
@@ -6442,12 +6442,12 @@ label dharemhouse1:
                                         ha "..."
                                         p "Nevermind..."
                                         p "Time to put you back together..."
-                                        scene black with circleirisin  
+                                        scene black with circleirisin
                                         "Hanabi is really funny playdoll.. I hope she will not figure out what is really happening."
                                         show nharem0 with circleirisout
                                         jump nharem
-                                        
-                                
+
+
                                 "Boob Expansion":
                                         p "I want to try something new today..."
                                         p "Just open your kimono a little and sit down..."
@@ -6491,12 +6491,12 @@ label dharemhouse1:
                                                 p "Nice... But this is probably too much right now..."
                                                 ha "mmmmmm...."
                                                 p "Time to put yourself together Hanabi..."
-                                                scene black with circleirisin  
+                                                scene black with circleirisin
                                                 "Expansion is always funny, mainly with the Hyuga girls."
                                                 "You heal the scars and she didn't notice anything."
                                                 show nharem0 with circleirisout
                                                 jump nharem
-                                                
+
                                             "Medium expasnion":
                                                 p "Boobs expansion!!!"
                                                 $ renpy.transition(dissolve)
@@ -6532,11 +6532,11 @@ label dharemhouse1:
                                                 p "You love it right???"
                                                 ha "Mmmm..."
                                                 p "Ok... I will now release the Namigan... Put yourself together..."
-                                                scene black with circleirisin  
+                                                scene black with circleirisin
                                                 "Expansion is always funny, mainly with the Hyuga girls."
                                                 show nharem0 with circleirisout
                                                 jump nharem
-                                                
+
                                             "Fuck her boobs":
                                                 p "Boobs expansion!!!"
                                                 $ renpy.transition(dissolve)
@@ -6605,16 +6605,16 @@ label dharemhouse1:
                                                 ha "Aaa....."
                                                 p "But it is time to clean this..."
                                                 p "Drink all the sperm first, then clean the rest..."
-                                                scene black with circleirisin  
+                                                scene black with circleirisin
                                                 "It is amazing to fuck her boobs when they have that size."
                                                 "I wonder if she noticed anything."
                                                 show nharem0 with circleirisout
                                                 jump nharem
-                                                
-                                            
-                                        
-                                        
-                                
+
+
+
+
+
                                 "Fuck her":
                                         p "I want to fuck your pussy now...."
                                         ha "..."
@@ -6710,12 +6710,12 @@ label dharemhouse1:
                                                 ha "..."
                                                 p "Yeah... I forgot... You can't answer me in this state.."
                                                 p "Time to cancel Namigan and get you back to normal..."
-                                                scene black with circleirisin  
+                                                scene black with circleirisin
                                                 "When you fuck the Hanabi, you forget about all current problems."
                                                 "You should do it more often."
                                                 show nharem0 with circleirisout
                                                 jump nharem
-                                                
+
                                             "Cum out":
                                                 p "Fuck... I should cum on your body..."
                                                 $ renpy.transition(dissolve)
@@ -6735,12 +6735,12 @@ label dharemhouse1:
                                                 ha "..."
                                                 p "Yeah... I forgot... You can't answer me in this state.."
                                                 p "Time to cancel Namigan and get you back to normal..."
-                                                scene black with circleirisin  
+                                                scene black with circleirisin
                                                 "When you fuck the Hanabi, you forget about all current problems."
                                                 "You should do it more often."
                                                 show nharem0 with circleirisout
                                                 jump nharem
-                                                
+
                                             "Kage bunshin":
                                                 p "I want more!!!"
                                                 $ renpy.transition(dissolve)
@@ -6806,42 +6806,42 @@ label dharemhouse1:
                                                 p "And relaxed...."
                                                 p "I hope you enjoyed it."
                                                 ha "...."
-                                                scene black with circleirisin 
+                                                scene black with circleirisin
                                                 "It is good to use Kage Bunshin and cum more times at once..."
                                                 "Hanabi liked it too... I think..."
                                                 show nharem0 with circleirisout
                                                 jump nharem
-                                        
-                                    
-                        
-                        
+
+
+
+
                                 "Go somewhere else":
-                                    scene black with circleirisin               
+                                    scene black with circleirisin
                                     show dharem0 with circleirisout
-                                    jump dharem 
-                    
+                                    jump dharem
+
                 else:
                     "Hanabi is not here right now. Find her in the Konoha."
-                    scene black with circleirisin               
+                    scene black with circleirisin
                     show dharem0 with circleirisout
-                    jump dharem 
-            
+                    jump dharem
+
             "More fun":
                 if hinami <=10:
                     "You need Himawari for this option..."
-                    scene black with circleirisin               
+                    scene black with circleirisin
                     show dharem0 with circleirisout
-                    jump dharem 
+                    jump dharem
                 elif hinatamission <=14:
                     "You need Hinata for this option..."
-                    scene black with circleirisin               
+                    scene black with circleirisin
                     show dharem0 with circleirisout
-                    jump dharem 
-                elif hanabislave <=7: 
+                    jump dharem
+                elif hanabislave <=7:
                     "You need Hanabi for this option..."
-                    scene black with circleirisin               
+                    scene black with circleirisin
                     show dharem0 with circleirisout
-                    jump dharem 
+                    jump dharem
                 else:
                     p "So finally I have all three of the Hyuga girls..."
                     p "Kage bunshin no jutsu!!!"
@@ -6908,18 +6908,18 @@ label dharemhouse1:
                     hide hhhsp1
                     hide hhhsp2
                     p "I love this girls..."
-                    scene black with circleirisin 
+                    scene black with circleirisin
                     show nharem0 with circleirisout
                     jump nharem
-            
+
             "Go back to the map":
-                scene black with circleirisin               
+                scene black with circleirisin
                 show dharem0 with circleirisout
-                jump dharem 
-            
-    scene black with circleirisin               
+                jump dharem
+
+    scene black with circleirisin
     show dharem0 with circleirisout
-    jump dharem 
+    jump dharem
 
 
 
@@ -6952,26 +6952,26 @@ label dharemcave1:
             $ randomnum = renpy.random.randint(1,3) # (randomize between 1 and 3)
             if randomnum==1:
                 "You didn't find anything useful."
-                scene black with circleirisin               
+                scene black with circleirisin
                 show nharem0 with circleirisout
                 jump nharem
             if randomnum==2:
                 "You find some old kunais and sold it."
                 $ ryo = ryo + 100
                 "You got 100 ryo."
-                scene black with circleirisin               
+                scene black with circleirisin
                 show nharem0 with circleirisout
                 jump nharem
             if randomnum==3:
                 "You find a rare armor. And got 300 Ryo."
                 $ ryo = ryo + 300
-                scene black with circleirisin               
+                scene black with circleirisin
                 show nharem0 with circleirisout
                 jump nharem
-                
+
         "Have fun with Tsunade":
             if tsumission >=17:
-                scene black with circleirisin               
+                scene black with circleirisin
                 show doffice with circleirisout
                 show doffice
                 $ renpy.transition(dissolve)
@@ -6985,18 +6985,18 @@ label dharemcave1:
                 t "%(p)s...."
                 p "So what I can do now?"
                 menu:
-                    
+
                                 "Basic boob grow":
-                                        $ tsunapick = 1 
+                                        $ tsunapick = 1
                                         p "Now prepare yourself for training!"
                                         t "..."
                                         $ renpy.transition(dissolve)
                                         hide tsunade1
                                         hide tsunade2
-                                        hide tsunade3 
+                                        hide tsunade3
                                         hide tsunanna
                                         show tsunade1n
-                                        show tsunanna                                        
+                                        show tsunanna
                                         p "Good now is time to have some fun."
                                         p "What should I do first?"
                                         menu tsuboobs1:
@@ -7004,7 +7004,7 @@ label dharemcave1:
                                                 if tsunapick == 3:
                                                     p "I really want to make them really huge!"
                                                     p "Expansion!!!" with hpunch
-                                                    hide tsunanna 
+                                                    hide tsunanna
                                                     show tsunaclop
                                                     t "ARgggg!!!"
                                                     p "More!!!"
@@ -7014,17 +7014,17 @@ label dharemcave1:
                                                     p "Just another milk."
                                                     p "Hmm... Maybe I can sell it or something...."
                                                     $ renpy.transition(dissolve)
-                                                    hide tsunamil3                                                    
+                                                    hide tsunamil3
                                                     hide tsunaclop
-                                                    show tsunanna 
+                                                    show tsunanna
                                                     p "Huh?"
-                                                    p "I need to focus more on training."                                                    
-                                                    
+                                                    p "I need to focus more on training."
+
                                                 elif tsunapick == 2:
                                                     $ tsunapick = 3
                                                     p "That boobs look great but I need to make them bigger!"
                                                     p "Expansion!!!" with hpunch
-                                                    hide tsunanna 
+                                                    hide tsunanna
                                                     show tsunahapna
                                                     t "Yes!!!"
                                                     p "Chakra control!"
@@ -7042,7 +7042,7 @@ label dharemcave1:
                                                     p "Expansion!!!" with hpunch
                                                     hide tsunade1n
                                                     show tsunade2n
-                                                    hide tsunanna 
+                                                    hide tsunanna
                                                     show tsunahapna
                                                     p "Huh? That was easy!"
                                                     t "You can now concentrate your chakra."
@@ -7054,11 +7054,11 @@ label dharemcave1:
                                                     p "So much milk...."
                                                     p "hmmmm...."
                                                     $ renpy.transition(dissolve)
-                                                    hide tsunamil2                                                    
+                                                    hide tsunamil2
                                                     hide tsunahapna
-                                                    show tsunanna 
+                                                    show tsunanna
                                                 jump tsuboobs1
-                                                
+
                                             "Decrease boob size":
                                                 if tsunapick == 1:
                                                     p "Not sure if it is possible but I will try!"
@@ -7081,8 +7081,8 @@ label dharemcave1:
                                                     $ renpy.transition(dissolve)
                                                     hide tsunade2n
                                                     show tsunade1n
-                                                    hide tsunanna 
-                                                    show tsunanna 
+                                                    hide tsunanna
+                                                    show tsunanna
                                                     t "Ouch..."
                                                     p "Look like it work."
                                                     p "But I still think bigger is better."
@@ -7095,13 +7095,13 @@ label dharemcave1:
                                                     $ renpy.transition(dissolve)
                                                     hide tsunade3n
                                                     show tsunade2n
-                                                    hide tsunanna 
-                                                    show tsunanna 
+                                                    hide tsunanna
+                                                    show tsunanna
                                                     p "Size is still nice."
                                                     p "Justt...."
                                                     jump tsuboobs1
                                                 jump tsuboobs1
-                                                
+
                                             "Write some motivation notes":
                                                 if tsunapick == 1:
                                                     p "What will look good on this small boobs..."
@@ -7127,7 +7127,7 @@ label dharemcave1:
                                                     t "????"
                                                     p "That is good too..."
                                                 p "And one more here."
-                                                $ renpy.transition(dissolve)    
+                                                $ renpy.transition(dissolve)
                                                 show tsunate0
                                                 t "...."
                                                 p "Yes it look good."
@@ -7142,20 +7142,20 @@ label dharemcave1:
                                                 p "....."
                                                 p "Still good."
                                                 jump tsuboobs1
-                                                
+
                                             "Slash her":
                                                 p "Maybe if I..."
                                                 #$ randomnum = renpy.random.randint(1,3) # (randomize between 1 and 3)
                                                 if tsunapick == 1:
                                                     with hpunch
-                                                    hide tsunanna 
+                                                    hide tsunanna
                                                     show tsunasl1
                                                     show tsunasadna
                                                     t "Ouch! What are you doing?"
                                                     p "Calm down now. Just want to test something."
                                                     t "But what?"
                                                 elif tsunapick == 2:
-                                                    hide tsunanna 
+                                                    hide tsunanna
                                                     with hpunch
                                                     show tsunasl2
                                                     show tsunasadna
@@ -7163,7 +7163,7 @@ label dharemcave1:
                                                     p "Calm down now. Just want to test something."
                                                     t "Carefully please."
                                                 elif tsunapick == 3:
-                                                    hide tsunanna 
+                                                    hide tsunanna
                                                     with hpunch
                                                     show tsunasl3
                                                     show tsunasadna
@@ -7193,17 +7193,17 @@ label dharemcave1:
                                                 p "Ok that is enough."
                                                 p "We can continue with normal training."
                                                 t "Sure..."
-                                                scene black with circleirisin               
+                                                scene black with circleirisin
                                                 show nharem0 with circleirisout
                                                 "You spend the rest of the day with training."
-                                                $ chakra = chakra + 1 
+                                                $ chakra = chakra + 1
                                                 "The sun is already set, what now?"
-                                                jump nharem                                                                                           
-                                        
-                                        
-                                        
-                                        
-                                        
+                                                jump nharem
+
+
+
+
+
                                 "Chakra resistance":
                                         p "Time to train chakra resistance."
                                         p "Show me your boobs now!"
@@ -7232,7 +7232,7 @@ label dharemcave1:
                                                 show ts1clna
                                                 t "Why would you?"
                                                 p "Silence!"
-                                                "Slash!" with hpunch    
+                                                "Slash!" with hpunch
                                                 show ts1sl2
                                                 t "Ouuuuuuuuu...."
                                                 p "Nice look like you still feel pain."
@@ -7240,7 +7240,7 @@ label dharemcave1:
                                                 hide ts1clna
                                                 show ts1sadna
                                                 t "Of course I feel pain, why would I......"
-                                                "Slash!" with hpunch    
+                                                "Slash!" with hpunch
                                                 show ts1sl3
                                                 t "Argggg...."
                                                 p "Yeah.... That look nice on you...."
@@ -7254,7 +7254,7 @@ label dharemcave1:
                                                 hide ts1sl2
                                                 hide ts1sl3
                                                 jump tsunatits12
-                                                
+
                                             "Lightning style":
                                                 p "Maybe if I try to attach these things to..."
                                                 with fade
@@ -7295,8 +7295,8 @@ label dharemcave1:
                                                 hide ts1light
                                                 hide ts1ring
                                                 jump tsunatits12
-                                                
-                                                
+
+
                                             "Just fuck her a little":
                                                 p "Maybe you should try harder..."
                                                 p "Just move your boobs a little..."
@@ -7373,19 +7373,19 @@ label dharemcave1:
                                                 show ts1sp3
                                                 p "That one was really good."
                                                 p "It feels like......"
-                                                $ chakra = chakra + 1 
+                                                $ chakra = chakra + 1
                                                 p "Yes.... I fell stronger now!"
                                                 p "Listen Tsunade. I enjoy it today."
                                                 t "Come back again to train with me."
                                                 p "You can count with that."
-                                                scene black with circleirisin  
+                                                scene black with circleirisin
                                                 show nharem0 with circleirisout
                                                 jump nharem
-                                                
-                                    
-                                        
-                                        
-                                        
+
+
+
+
+
                                 "Chakra endurance":
                                         p "We need to work on my endurance."
                                         t "...."
@@ -7397,7 +7397,7 @@ label dharemcave1:
                                         hide tsunan
                                         hide tsunade2
                                         hide tsunanna
-                                        hide tsunade3 
+                                        hide tsunade3
                                         show ts3a
                                         show ts3nna
                                         p "Good... Now we can start."
@@ -7406,7 +7406,7 @@ label dharemcave1:
                                         $ renpy.transition(dissolve)
                                         hide ts3a
                                         hide ts3nna
-                                        show ts3p1   
+                                        show ts3p1
                                         show ts3a
                                         show ts3opna
                                         t "Yesssss..."
@@ -7416,10 +7416,10 @@ label dharemcave1:
                                         hide ts3opna
                                         hide ts3p1
                                         show ts3p2
-                                        show ts3a                                        
+                                        show ts3a
                                         show ts3nna
                                         t "Aaaaa..."
-                                        p "And this is only beginning."                                        
+                                        p "And this is only beginning."
                                         t "....."
                                         p "What should I do now?"
                                         menu tsunafuck21:
@@ -7501,11 +7501,11 @@ label dharemcave1:
                                                 $ renpy.transition(dissolve)
                                                 hide ts3cl
                                                 show ts3nna
-                                                p "What now???"                                                
-                                                jump tsunafuck21                                                                                         
-                                            
+                                                p "What now???"
+                                                jump tsunafuck21
+
                                             "Increase your penis size":
-                                                p "Time for some extra size."                                                
+                                                p "Time for some extra size."
                                                 $ renpy.transition(dissolve)
                                                 hide ts3a
                                                 hide ts3nna
@@ -7520,7 +7520,7 @@ label dharemcave1:
                                                 $ renpy.transition(dissolve)
                                                 hide ts3a
                                                 hide ts3cl
-                                                hide ts3p4                                                
+                                                hide ts3p4
                                                 show ts3a
                                                 show ts3opna
                                                 show ts3p5
@@ -7546,7 +7546,7 @@ label dharemcave1:
                                                 $ renpy.transition(dissolve)
                                                 hide ts3a
                                                 hide ts3opna
-                                                hide ts3p5                                                
+                                                hide ts3p5
                                                 show ts3a
                                                 show ts3cl
                                                 show ts3p6
@@ -7555,9 +7555,9 @@ label dharemcave1:
                                                 $ renpy.transition(dissolve)
                                                 hide ts3a
                                                 hide ts3cl
-                                                hide ts3p6                                                
+                                                hide ts3p6
                                                 show ts3a
-                                                show ts3sadna                                                
+                                                show ts3sadna
                                                 show ts3p5
                                                 p "And I finally feel her belly."
                                                 $ renpy.transition(dissolve)
@@ -7572,7 +7572,7 @@ label dharemcave1:
                                                 $ renpy.transition(dissolve)
                                                 hide ts3a
                                                 hide ts3sadna
-                                                hide ts3p4                                                
+                                                hide ts3p4
                                                 show ts3a
                                                 show ts3cl
                                                 show ts3p5
@@ -7580,7 +7580,7 @@ label dharemcave1:
                                                 $ renpy.transition(dissolve)
                                                 hide ts3a
                                                 hide ts3cl
-                                                hide ts3p5                                                
+                                                hide ts3p5
                                                 show ts3a
                                                 show ts3cl
                                                 show ts3p6
@@ -7588,7 +7588,7 @@ label dharemcave1:
                                                 $ renpy.transition(dissolve)
                                                 hide ts3a
                                                 hide ts3cl
-                                                hide ts3p6                                                
+                                                hide ts3p6
                                                 show ts3a
                                                 show ts3cl
                                                 show ts3p5
@@ -7596,7 +7596,7 @@ label dharemcave1:
                                                 $ renpy.transition(dissolve)
                                                 hide ts3a
                                                 hide ts3cl
-                                                hide ts3p5   
+                                                hide ts3p5
                                                 show ts3p4
                                                 show ts3a
                                                 show ts3cl
@@ -7604,14 +7604,14 @@ label dharemcave1:
                                                 $ renpy.transition(dissolve)
                                                 hide ts3a
                                                 hide ts3cl
-                                                hide ts3p4 
+                                                hide ts3p4
                                                 show ts3p2
                                                 show ts3a
                                                 show ts3nna
-                                                p "And what now?"   
+                                                p "And what now?"
                                                 jump tsunafuck21
-                                                
-                                                
+
+
                                             "Use some toys":
                                                 p "Maybe if I use this on you..."
                                                 $ renpy.transition(dissolve)
@@ -7668,9 +7668,9 @@ label dharemcave1:
                                                 hide ts3slash3
                                                 hide ts3ring
                                                 jump tsunafuck21
-                                                
+
                                             "Just cum":
-                                                p "Yeah, that is amazing!"                                                
+                                                p "Yeah, that is amazing!"
                                                 $ renpy.transition(dissolve)
                                                 hide ts3a
                                                 hide ts3nna
@@ -7739,12 +7739,12 @@ label dharemcave1:
                                                         t "I mean, train together."
                                                         p "Yes I understant. But I need rest now."
                                                         p "See you later."
-                                                        $ chakra = chakra + 1 
-                                                        scene black with circleirisin  
+                                                        $ chakra = chakra + 1
+                                                        scene black with circleirisin
                                                         show nharem0 with circleirisout
                                                         jump nharem
 
-                                                        
+
                                                     "Cum out":
                                                         $ renpy.transition(dissolve)
                                                         hide ts3a
@@ -7774,23 +7774,23 @@ label dharemcave1:
                                                         t "I mean, train together."
                                                         p "I really am looking forward to it."
                                                         p "So I will see you tomorrow."
-                                                        $ chakra = chakra + 1 
-                                                        scene black with circleirisin  
+                                                        $ chakra = chakra + 1
+                                                        scene black with circleirisin
                                                         show nharem0 with circleirisout
                                                         jump nharem
-                                                
+
                                 "Chakra release":
                                         p "I want to increase my chakra supply."
                                         p "Understant."
                                         $ renpy.transition(dissolve)
                                         hide tsunan
                                         hide tsunanna
-                                        show tsunanna        
+                                        show tsunanna
                                         hide tsunade1
                                         hide tsunan
                                         hide tsunade2
                                         hide tsunanna
-                                        hide tsunade3 
+                                        hide tsunade3
                                         p "Great..."
                                         $ renpy.transition(dissolve)
                                         show ts4a
@@ -7896,11 +7896,11 @@ label dharemcave1:
                                         show tsunahap
                                         t "Mmmm... Tasty..."
                                         p "Yeah... See you later..."
-                                        $ chakra = chakra + 1 
-                                        scene black with circleirisin  
+                                        $ chakra = chakra + 1
+                                        scene black with circleirisin
                                         show nharem0 with circleirisout
                                         jump nharem
-                                        
+
                                 "Chakra mixed training":
                                         p "Time to show you some extra fun."
                                         t "I will do anything that you want."
@@ -7910,7 +7910,7 @@ label dharemcave1:
                                         hide tsunan
                                         hide tsunade2
                                         hide tsunanna
-                                        hide tsunade3 
+                                        hide tsunade3
                                         show ts2b2
                                         show ts2
                                         show ts2nna
@@ -7933,7 +7933,7 @@ label dharemcave1:
                                                     show ts2nna
                                                 else:
                                                     p "Body looks fine."
-                                                    p "Maybe..."    
+                                                    p "Maybe..."
                                                     $ renpy.transition(dissolve)
                                                     hide ts2b2
                                                     hide ts2nna
@@ -7941,7 +7941,7 @@ label dharemcave1:
                                                     show ts2b1
                                                     show ts2
                                                     show ts2nna
-                                                    
+
                                                 p "Nice."
                                                 p "If I attach this on the nipples.."
                                                 $ renpy.transition(dissolve)
@@ -8011,7 +8011,7 @@ label dharemcave1:
                                                         show ts2
                                                         show ts2nna
                                                         t "Yes!!!!"
-                                                        
+
                                                     else:
                                                         $ renpy.transition(dissolve)
                                                         hide ts2b1
@@ -8043,9 +8043,9 @@ label dharemcave1:
                                                             show ts2
                                                             show ts2nna
                                                             p "Nice."
-                                                        
+
                                                     jump tsunalay1
-                                                    
+
                                                 else:
                                                     $ tier = 1
                                                     p "Maybe they should be smaller."
@@ -8059,7 +8059,7 @@ label dharemcave1:
                                                         show ts2
                                                         show ts2nna
                                                         p "It works!"
-                                                        
+
                                                     else:
                                                         $ renpy.transition(dissolve)
                                                         hide ts2a1
@@ -8091,15 +8091,15 @@ label dharemcave1:
                                                             show ts2
                                                             show ts2nna
                                                             p "Nice."
-                                                        
+
                                                     jump tsunalay1
-                                                     
+
                                             "Fuck her":
                                                 p "Maybe I should stop playing around."
                                                 p "I think you know what I want to do now."
                                                 $ renpy.transition(dissolve)
                                                 show ts2p1
-                                                t "Finally..."                                                
+                                                t "Finally..."
                                                 $ renpy.transition(dissolve)
                                                 hide ts2p1
                                                 show ts2shy
@@ -8169,15 +8169,15 @@ label dharemcave1:
                                                         t "Sex?"
                                                         p "I mean training, of course..."
                                                         p "And I feel stronger again."
-                                                        $ chakra = chakra + 1 
+                                                        $ chakra = chakra + 1
                                                         p "Not sure how it is possible, but my chakra control is just better now."
                                                         t "Of course it is..."
                                                         $ renpy.transition(dissolve)
                                                         hide ts2hapna
-                                                        show ts2nna 
+                                                        show ts2nna
                                                         t "Actually, it is the basics of the training."
                                                         t "If you do something with passion the result is always better."
-                                                        scene black with circleirisin  
+                                                        scene black with circleirisin
                                                         show nharem0 with circleirisout
                                                         jump nharem
                                                     "Try something else":
@@ -8189,16 +8189,16 @@ label dharemcave1:
                                                         $ renpy.transition(dissolve)
                                                         hide ts2p1
                                                         hide ts2hapna
-                                                        show ts2nna                                                
+                                                        show ts2nna
                                                         jump tsunalay1
-                                                        
-                                            
+
+
                                             "Dick Expansion":
                                                 p "Maybe I should stop playing around."
                                                 p "I think you know what I want to do now."
                                                 $ renpy.transition(dissolve)
                                                 show ts2p1
-                                                t "Finally..."                                                
+                                                t "Finally..."
                                                 $ renpy.transition(dissolve)
                                                 hide ts2p1
                                                 show ts2shy
@@ -8315,43 +8315,43 @@ label dharemcave1:
                                                 $ renpy.transition(dissolve)
                                                 hide ts2pb1
                                                 t "It looks like your chakra control is better now."
-                                                $ chakra = chakra + 1 
+                                                $ chakra = chakra + 1
                                                 p "Yes, it is weird how fast it can work."
                                                 p "I mean normal training took twice more time."
                                                 p "But this is so fast and good...."
                                                 p "Because I just love it..."
                                                 t "......"
                                                 p "I am really excited about our next training."
-                                                scene black with circleirisin  
+                                                scene black with circleirisin
                                                 show nharem0 with circleirisout
                                                 jump nharem
-                                    
-               
-                        
-                                            
-                            
 
 
-                    
-                    
-   
-                    
-                    
-                    
-                    
-                    
-                    
-                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             else:
                 "Tsunade is still in the Konoha."
-                scene black with circleirisin               
+                scene black with circleirisin
                 show dharem0 with circleirisout
-                jump dharem 
-            
+                jump dharem
+
         "Go back to the map":
-            scene black with circleirisin               
+            scene black with circleirisin
             show dharem0 with circleirisout
-            jump dharem  
+            jump dharem
 
 
 
@@ -8395,22 +8395,22 @@ label dharemcave1:
 
 
 label dharemforest1:
-    scene dharemforest 
+    scene dharemforest
     menu:
         "Look around":
             "You look around the forest... And didn't find anything useful..."
-            scene black with circleirisin               
+            scene black with circleirisin
             show nrock0 with circleirisout
-            jump dharem   
-            
+            jump dharem
+
         "Call Tenten":
             if tenslave <=4:
                 "You can find Tenten in the hidden rock village."
-                scene black with circleirisin               
+                scene black with circleirisin
                 show nrock0 with circleirisout
-                jump dharem 
-                
-                
+                jump dharem
+
+
             else:
                             $ renpy.transition(dissolve)
                             show ten0a
@@ -8437,7 +8437,7 @@ label dharemforest1:
                                     p "Water explosion! *splash*"
                                     $ renpy.transition(dissolve)
                                     show ten0w2
-                                    te "mhmmmm....*moan*" 
+                                    te "mhmmmm....*moan*"
                                     p "Better right?"
                                     p "Water dragoon! *splash*"
                                     $ renpy.transition(dissolve)
@@ -8495,7 +8495,7 @@ label dharemforest1:
                                     p "Good girl... You can stop that now."
                                     te "....*mumble*"
                                     p "It was really good but now is time to clean youreslf..."
-                                    te "Ok..."                                    
+                                    te "Ok..."
                                     $ renpy.transition(dissolve)
                                     hide ten0l1
                                     hide ten0l2
@@ -8517,10 +8517,10 @@ label dharemforest1:
                                     show ten0nok
                                     p "You are looking good now."
                                     p "Just that boobs are... Hmm who cares bye..."
-                                    scene black with circleirisin  
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
                                     jump nharem
-                                
+
                                 "Blowjob":
                                         p "Is time to give me a nice blowjob."
                                         p "Now, Strip and start to suck my cock!"
@@ -8560,7 +8560,7 @@ label dharemforest1:
                                         hide ten2sad
                                         show ten2back
                                         hide ten2bl2
-                                        show ten2bl3                                        
+                                        show ten2bl3
                                         show ten2p1
                                         te "Mmmmm...*moan cough*"
                                         $ renpy.transition(dissolve)
@@ -8695,10 +8695,10 @@ label dharemforest1:
                                                 show ten0nok
                                                 p "Good girl..."
                                                 p "I wonder if you like it...."
-                                                scene black with circleirisin                   
+                                                scene black with circleirisin
                                                 show nharem0 with circleirisout
                                                 jump nharem
-                                                
+
                                             "Boob expansion":
                                                     p "I want to make your boobs bigger!"
                                                     te "??? *mumble*"
@@ -8710,7 +8710,7 @@ label dharemforest1:
                                                     hide ten2a
                                                     show ten2b
                                                     show ten2back
-                                                    show ten2bl2                                                    
+                                                    show ten2bl2
                                                     show ten2p2
                                                     p "Nice!"
                                                     $ renpy.transition(dissolve)
@@ -8836,11 +8836,11 @@ label dharemforest1:
                                                     show ten0nok
                                                     p "Good girl."
                                                     p "Time to go home..."
-                                                    scene black with circleirisin                   
+                                                    scene black with circleirisin
                                                     show nharem0 with circleirisout
                                                     jump nharem
-                                                
-                                                
+
+
                                             "Titfuck":
                                                     p "I want to fuck your tits!"
                                                     te "ghmgmmm *mumble*"
@@ -8852,7 +8852,7 @@ label dharemforest1:
                                                     hide ten2a
                                                     show ten2b
                                                     show ten2back
-                                                    show ten2bl0                                                    
+                                                    show ten2bl0
                                                     show ten2p2
                                                     p "Nice ... But I need them bigger for titfuck!"
                                                     p "Expansion scroll next level!"
@@ -8949,7 +8949,7 @@ label dharemforest1:
                                                     show ten2tf4
                                                     p "Shit this is amazing! *splurt*"
                                                     $ renpy.transition(dissolve)
-                                                    show ten2tf5                                                    
+                                                    show ten2tf5
                                                     te "ahhhh... *drip moan*"
                                                     $ renpy.transition(dissolve)
                                                     show ten2tf6
@@ -8974,7 +8974,7 @@ label dharemforest1:
                                                     hide ten2h1
                                                     hide ten2h2
                                                     hide ten2h3
-                                                    hide ten2tf4 
+                                                    hide ten2tf4
                                                     hide ten2tf5
                                                     hide ten2tf6
                                                     hide ten2tf7
@@ -8986,13 +8986,13 @@ label dharemforest1:
                                                     show ten0nok
                                                     p "Good girl..."
                                                     p "See you later...."
-                                                    scene black with circleirisin                   
+                                                    scene black with circleirisin
                                                     show nharem0 with circleirisout
                                                     jump nharem
-                                
-                                
-                                
-                                
+
+
+
+
                                 "Kage bunshin":
                                         p "Now is time for some Kage Bunshin tricks."
                                         te "Mmmm...*mumble*"
@@ -9120,12 +9120,12 @@ label dharemforest1:
                                                 te "grgggg..*gag cough*"
                                                 p "Are you allright?"
                                                 te "grgfgf... *gag moan cough*"
-                                                scene black with circleirisin   
+                                                scene black with circleirisin
                                                 "Tenten passed out. It looks like it was too much for her."
                                                 "You washed her in the water and dress her... It was a lot of work but you did it."
                                                 show nharem0 with circleirisout
                                                 jump nharem
-                                                
+
                                             "Medium whip expansion":
                                                     p "Time to change your boobs size."
                                                     p "Expansion scroll activation!"
@@ -9231,12 +9231,12 @@ label dharemforest1:
                                                     te "grgggg..*gag cough*"
                                                     p "Are you allright?"
                                                     te "grgfgf... *gag moan cough*"
-                                                    scene black with circleirisin   
+                                                    scene black with circleirisin
                                                     "Tenten passed out. It looks like it was too much for her."
                                                     "You washed her in the water and dress her... It was a lot of work but you did it."
                                                     show nharem0 with circleirisout
                                                     jump nharem
-                                            
+
                                             "Full expansion":
                                                     p "I hope you are ready!"
                                                     p "Expansion scroll activation!"
@@ -9355,22 +9355,22 @@ label dharemforest1:
                                                     te "grgggg..*gag cough*"
                                                     p "Are you allright?"
                                                     te "grgfgf... *gag moan cough*"
-                                                    scene black with circleirisin   
+                                                    scene black with circleirisin
                                                     "Tenten passed out. It looks like it was too much for her."
                                                     "You washed her in the water and dress her... It was a lot of work but you did it."
                                                     show nharem0 with circleirisout
                                                     jump nharem
-                
-                
-                
-                
-               
-        
+
+
+
+
+
+
         "Go back to the map":
-            scene black with circleirisin               
+            scene black with circleirisin
             show dharem0 with circleirisout
-            jump dharem   
-            
+            jump dharem
+
 ################################ dhremvillage1
 ################################ dhremvillage1
 ################################ dhremvillage1
@@ -9473,10 +9473,10 @@ label dhremvillage1:
                                         show sblindop
                                         p "Good job kid... But you should try harder next time..."
                                         s "....."
-                                        scene black with circleirisin               
+                                        scene black with circleirisin
                                         show nharem0 with circleirisout
                                         jump nharem
-                                        
+
                                     "Cum out":
                                         $ renpy.transition(dissolve)
                                         show s5spermout
@@ -9503,10 +9503,10 @@ label dhremvillage1:
                                         p "I wonder if you really feel it..."
                                         s "..."
                                         p "It doesn't matter now..."
-                                        scene black with circleirisin               
+                                        scene black with circleirisin
                                         show nharem0 with circleirisout
                                         jump nharem
-                                
+
                             "Punish her":
                                 p "Ok I have a lot of toys I want to use on you tonight kid, hehe..."
                                 p "First I'm going to play with your titties!"
@@ -9570,7 +9570,7 @@ label dhremvillage1:
                                 show s5cry2
                                 s "Ooouuuu! *Drip*"
                                 p "Shit.... Look at yourself. You look like a fucking whore!"
-                                p "Maybe I should take a picture of you." 
+                                p "Maybe I should take a picture of you."
                                 p "Nah too risky."
                                 p "Ok time to fix you up."
                                 p "First I need to heal you."
@@ -9602,19 +9602,19 @@ label dhremvillage1:
                                 hide s5tounge
                                 hide s5h
                                 show sn
-                                show sblindop                                
+                                show sblindop
                                 p "No go back to the work... I will come back later..."
                                 p "Maybe..."
-                                s "..."                                
-                                scene black with circleirisin               
+                                s "..."
+                                scene black with circleirisin
                                 show nharem0 with circleirisout
                                 jump nharem
-                                
+
                             "Fuck her nipples":
                                 p "I really want to fuck your nipples!"
                                 $ renpy.transition(dissolve)
                                 hide snnaked1
-                                hide sblindop                                
+                                hide sblindop
                                 show s5h
                                 show s5sad
                                 p "Your Tits are so amazing! I love squeezing them!"
@@ -9672,9 +9672,9 @@ label dhremvillage1:
                                         show snnaked1
                                         show sblindop
                                         p "Huh? Not getting dressed?"
-                                        p "Whatever.. I don't care until I am satisfied."                                        
+                                        p "Whatever.. I don't care until I am satisfied."
                                         s "...."
-                                        scene black with circleirisin               
+                                        scene black with circleirisin
                                         show nharem0 with circleirisout
                                         jump nharem
                                     "Left nipple":
@@ -9718,12 +9718,12 @@ label dhremvillage1:
                                         hide s5nfnlp
                                         show sblindop
                                         p "Huh? Not getting dressed?"
-                                        p "Whatever.. I don't care until I am satisfied."                                        
+                                        p "Whatever.. I don't care until I am satisfied."
                                         s "...."
-                                        scene black with circleirisin               
+                                        scene black with circleirisin
                                         show nharem0 with circleirisout
                                         jump nharem
-                                
+
                             "Kage bunshin no jutsu":
                                 p "Ok kid time for something special."
                                 p "kage bunshin no jutsu!"with hpunch
@@ -9846,16 +9846,16 @@ label dhremvillage1:
                                 p "But I can do this tomorrow too!"
                                 p "Just be a good girl and wait for me."
                                 s ".... *moan*"
-                                scene black with circleirisin               
+                                scene black with circleirisin
                                 show nharem0 with circleirisout
                                 jump nharem
             else:
                 "How you want to talk with her if she is not here?"
-                scene black with circleirisin               
+                scene black with circleirisin
                 show dharem0 with circleirisout
                 jump dharem
-                
-####################################### 12 je max pre Sakuru             
+
+####################################### 12 je max pre Sakuru
         "Call Sakura":
             if sakuraslave >= 13: # 12 je max pre Sakuru
                 p "Where are you Sakura?"
@@ -9864,7 +9864,7 @@ label dhremvillage1:
                 show sakunna
                 p "Here you are...."
                 menu sakuratrain95111:
-                    "Play with her body": 
+                    "Play with her body":
                             p "Concentrate..."
                             p "Time for something easy."
                             p "Take your clothes off!"
@@ -9921,16 +9921,16 @@ label dhremvillage1:
                             $ renpy.transition(dissolve)
                             hide sakul3
                             hide sakul4
-                            p "That was fun, but I will do more next time..."                               
+                            p "That was fun, but I will do more next time..."
                             p "So prepare for the next time Sakura."
                             sa "*moan*"
-                            scene black with circleirisin               
+                            scene black with circleirisin
                             show nharem0 with circleirisout
                             jump nharem
-                            
-                                
-                        
-                    "Pain train":   
+
+
+
+                    "Pain train":
                             p "Time to pain train!"
                             p "Now..."
                             p "Take your clothes off!"
@@ -9983,10 +9983,10 @@ label dhremvillage1:
                             p "Anyway, time to end it."
                             sa "*sad moaning*"
                             p "Hehe..."
-                            scene black with circleirisin               
+                            scene black with circleirisin
                             show nharem0 with circleirisout
                             jump nharem
-                            
+
                     "Blowjob":
                             p "I want a blowjob now..."
                             p "Take your clothes off!"
@@ -10107,7 +10107,7 @@ label dhremvillage1:
                                     p "You can't understand me or?"
                                     sa "*moan*"
                                     p "Who cares... Bye..."
-                                    scene black with circleirisin               
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
                                     jump nharem
                                 "Nipple fuck":
@@ -10225,11 +10225,11 @@ label dhremvillage1:
                                     sa "*gag*"
                                     sa "*moan*"
                                     p "Who cares... Bye..."
-                                    scene black with circleirisin               
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
                                     jump nharem
-                        
-                    "Fuck her":   
+
+                    "Fuck her":
                             p "Ok. Just..."
                             p "Take your clothes off!"
                             $ renpy.transition(dissolve)
@@ -10362,11 +10362,11 @@ label dhremvillage1:
                                     p "... Emh...Who cares, right?"
                                     sa "*gag moan*"
                                     p "..."
-                                    scene black with circleirisin               
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
                                     jump nharem
-                                    
-                                "Toys":    
+
+                                "Toys":
                                     p "Maybe you can show me something that Tsunade teach you..."
                                     sa "..."
                                     p "Can you show me expansion technique?"
@@ -10462,11 +10462,11 @@ label dhremvillage1:
                                             show saku2spin2
                                             p "That was good...."
                                             p "I will fill you again soon..."
-                                            scene black with circleirisin               
+                                            scene black with circleirisin
                                             show nharem0 with circleirisout
                                             jump nharem
-                                            
-                                            
+
+
                                         "Cum out":
                                             p "Yeah just..."
                                             $ renpy.transition(dissolve)
@@ -10487,10 +10487,10 @@ label dhremvillage1:
                                             p "Just look at you..."
                                             sa "*moan*"
                                             p "Nevermind..."
-                                            scene black with circleirisin               
+                                            scene black with circleirisin
                                             show nharem0 with circleirisout
                                             jump nharem
-                            
+
                     "Call Mikoto":
                         p "I think this is the right time to call Mikoto."
                         $ renpy.transition(dissolve)
@@ -10504,7 +10504,7 @@ label dhremvillage1:
                         "...."
                         show mikoa:
                             xalign 1.0 yalign 1.0
-                        show mikop:                                
+                        show mikop:
                             xalign 1.0 yalign 1.0
                         mik "huh??? It looks like you want to have some fun with Sakura."
                         p "Yeah... Do you want to join us???"
@@ -10613,11 +10613,11 @@ label dhremvillage1:
                         mik "Yes it was..."
                         mik "It is good to have Sakura here in the village."
                         p "For sure it is..."
-                        scene black with circleirisin               
+                        scene black with circleirisin
                         show nharem0 with circleirisout
                         jump nharem
-                        
-                    
+
+
                     "Call Sarada":
                         if saradaeyes <= 22:
                             "Sarada is not here, try something else."
@@ -10630,7 +10630,7 @@ label dhremvillage1:
                             hide sakunna
                             show sn:
                                 xalign 1.0 yalign 1.0
-                            show sblind:                                
+                            show sblind:
                                 xalign 1.0 yalign 1.0
                             s "...."
                             $ renpy.transition(dissolve)
@@ -10836,11 +10836,11 @@ label dhremvillage1:
                                     p "That was fast...."
                                     sa "...."
                                     p "Well, back to business now..."
-                                    scene black with circleirisin               
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
                                     jump nharem
-                                    
-                                    
+
+
                                 "Just squeez":
                                     $ renpy.transition(dissolve)
                                     show sasa1p1
@@ -10940,22 +10940,21 @@ label dhremvillage1:
                                     show sasa1rop
                                     p "That was fast...."
                                     p "Well, back to business now..."
-                                    scene black with circleirisin               
+                                    scene black with circleirisin
                                     show nharem0 with circleirisout
                                     jump nharem
-                        
-                        
-                        scene black with circleirisin               
+
+
+                        scene black with circleirisin
                         show nharem0 with circleirisout
                         jump nharem
             else:
                 "How you want to talk with her if she is not here?"
-                scene black with circleirisin               
+                scene black with circleirisin
                 show dharem0 with circleirisout
                 jump dharem
-                
+
         "Go back to the map":
-            scene black with circleirisin               
+            scene black with circleirisin
             show dharem0 with circleirisout
-            jump dharem 
-                
+            jump dharem
