@@ -1,0 +1,16 @@
+label drock:
+
+    scene dmap0  
+
+    $ select = renpy.imagemap("dmap0.jpg", "dmap1.jpg", [
+                                               (313, 345, 783, 449, "restaurant"),
+                                               (79, 526, 349, 622, "home"),
+                                               (1273, 481, 1547, 579, "shop"),
+                                               (636, 680, 973, 770, "school"),
+                                               (1506, 734, 1827, 831, "stadion"),
+                                               (874, 956, 1166, 1023, "gate"),
+                                               ]) 
+    if select == "restaurant":
+        scene black with circleirisin               
+        show drestaurant with circleirisout
+        jump drestaurant
