@@ -374,15 +374,15 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            textbutton _("Старт") action Start()
 
         else:
 
-            textbutton _("History") action ShowMenu("history")
+            textbutton _("История") action ShowMenu("история")
 
-            textbutton _("Save") action ShowMenu("save")
+            textbutton _("сохранить") action ShowMenu("сохранить")
 
-        textbutton _("Load") action ShowMenu("load")
+        textbutton _("загрузка") action ShowMenu("загрузка")
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
@@ -392,7 +392,7 @@ screen navigation():
 
         elif not main_menu:
 
-            textbutton _("Main Menu") action MainMenu()
+            textbutton _("меню") action MainMenu()
 
         textbutton _("About") action ShowMenu("about")
 
@@ -402,7 +402,7 @@ screen navigation():
             textbutton _("Help") action ShowMenu("help")
 
             ## The quit button is banned on iOS and unnecessary on Android.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            textbutton _("Выход") action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button

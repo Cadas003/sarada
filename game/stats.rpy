@@ -135,7 +135,7 @@ label ik112:
         else:
             image "khim6.png"
 
-        text "Name: Himawari":
+        text "Name: Химавари":
             xpos 130 ypos 120
             size 30 color "#000000" italic False bold False
 
@@ -162,9 +162,9 @@ label ik112:
 
     if select == "mission":
         "С Химавари немного сложнее."
-        "You need to complete the S rank mission to unlock her."
-        "Then you can find her younger version in the forest during the night or older version in the stadium during the day."
-        "Just be careful what option you pick when you play with her.. You didn't want to mess the timeline, don't you?"
+        "Вам нужно выполнить миссию S ранга, чтобы разблокировать ее."
+        "Тогда вы можете найти ее младшую версию в лесу ночью или более старую версию на стадионе в течение дня."
+        "Просто будьте осторожны, какой вариант вы выберете, когда играете с ней .. Вы не хотели испортить график, не так ли?"
         $ renpy.transition(dissolve)
         jump ik112
 
@@ -332,10 +332,10 @@ label ik113:
 
 
     if select == "mission":
-        "If you want to unlock Hinata you need to complete S rank mission 2 times."
-        "Then you can find her in an empty room in your house."
-        "Get closer to her and try to interact with Sarada and Himawari to progress in her story."
-        "Use Namigan on her to unlock her second personality."
+        "Если вы хотите разблокировать Хинату, вам нужно выполнить миссию S ранга 2 раза."
+        "Тогда вы можете найти ее в пустой комнате в вашем доме."
+        "Станьте ближе к ней и попытайтесь взаимодействовать с Сарадой и Химавари, чтобы продвинуться в ее истории."
+        "Используйте Намиган на нее, чтобы разблокировать ее вторую личность."
         $ renpy.transition(dissolve)
         jump ik113
 
@@ -443,11 +443,11 @@ label ik114:
         else:
             image "kcho7.png"
 
-        text "Name: Chocho":
+        text "Name: Чочо":
             xpos 130 ypos 120
             size 30 color "#000000" italic False bold False
 
-        text "Status: Bodyguard / drunk":
+        text "Status: Bodyguard / пьяная":
             xpos 130 ypos 220
             size 30 color "#000000" italic False bold False
 
@@ -469,9 +469,9 @@ label ik114:
 
 
     if select == "mission":
-        "Try to find Chocho in the Konoha bar during the night."
-        "Then you can find her during a day in the restaurant and offer her some Ryo for her services."
-        "Do not forget to visit Tsunade and learn the expansion jutus. It is more fun when you know how to use it."
+        "Попробуйте найти Чохо в баре Коноха ночью."
+        "Затем вы можете найти ее в течение дня в ресторане и предложить ей Рё за ее услуги."
+        "Не забудьте посетить Цунаде и узнать о расширении юту. Это веселее, когда вы знаете, как его использовать."
         $ renpy.transition(dissolve)
         jump ik114
 
